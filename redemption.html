@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <title>Redemption</title>
+
+  <link rel="stylesheet" href="stylesheet.css">
+
+  </script>
+
+</head>
+
+<body>
+
+  <div class="sidenav">
+    <a href="index.html">Home</a>
+    <br>
+    <a href="redemption.html">Redemption</a>
+    <a href="redemption_vol.html">Redemption - Voluntary</a>
+    <a href="purchase.html">Purchase</a>
+    <a href="exchange.html">Exchange</a>
+    <a href="address.html">Address Change</a>
+    <br>
+		<a href="lookup.html">Fund Lookup</a>
+  </div>
+
+  <div class="main">
+
+    <h1>Redemption</h1>
+
+    <p id="cutOffDateLimit"></p>
+
+    <script type="text/javascript">
+
+      function cutOffDate() {
+          var today = new Date();
+          //var birthDate = new Date(DOB);
+          var year = today.getFullYear() - 59;
+          var month = today.getMonth() - 6;
+          if (month < 0 || month === 0) {
+            age--;
+              if(month < 0) {
+                  month = 12 - month;
+              }
+          }
+
+          return "The shareholder is older than 59 1/2 if the DOB is before <mark><strong>" + month + "/" + year + "</strong></mark>";
+      }
+
+      document.getElementById("cutOffDateLimit").innerHTML = cutOffDate();
+
+    </script>
+
+    <!--7-->
+
+    <button type="button" class="collapsible">IF A ROTH IRA</button>
+
+    <div class="content">
+
+      <br>
+
+      Verify if withdrawal is from principle or earnings.
+      <br>
+      <strong>Master Menu > Inquiry > Ret Plan Participant info</strong>
+
+      <br><br>
+
+      <strong>If the Shareholder is under the age of 59 ½:</strong> (Non-Qualified Distribution):
+      <br>
+
+      <div class="script">
+        “SINCE YOUR ARE UNDER THE AGE OF 59 ½ A PREMATURE DISTRIBUTION PENALTY OF 10%
+        ON ANY EARNINGS MAY APPLY. YOU MAY ALSO BE SUBJECT TO TAXES ON THE EARNINGS
+        PORTION OF THE REDEMPTION.”
+      </div>
+
+      <br>
+
+      <strong>If the shareholder is age 59 ½ or older but the account is open less
+        than 5 years:</strong>
+      <br>
+      <div class="script">
+        “SINCE THE ACCOUNT WAS OPENED LESS THAN 5 YEARS AGO, YOU MAY BE SUBJECT TO
+        TAXES ON THE EARNINGS PORTION OF THE REDEMPTION.”
+      </div>
+
+      <br>
+
+      <strong>IF THE SHAREHOLDER IS AGE 59 ½ OR OLDER AND THE ACCOUNT IS OPEN 5
+        YEARS OR MORE</strong> (Qualified Dist):
+      <br>
+      <div class="script">
+        “BASED ON YOUR AGE & HOW LONG YOU’VE HAD THE ACCOUNT, THE REDEMPTION IS NOT
+        SUBJECT TO FEDERAL INCOME TAX.”
+      </div>
+
+      <br>
+
+    </div>
+
+    <br>
+
+    <!--8-->
+
+    <button type="button" class="collapsible">IF AN IRA (Traditional, SEP, SIMPLE, Rollover):</button>
+
+    <div class="content">
+
+      <br>
+
+      <strong>IF THE SHAREHOLDER IS UNDER THE AGE OF 59 1/2 (Premature Distribution):</strong>
+      <br>
+      <div class="script">
+        “SINCE YOU ARE UNDER THE AGE OF 59½ A PREMATURE DISTRIBUTION PENALTY OF 10%
+        MAY APPLY. YOU MAY ALSO BE SUBJECT TO TAXES ON THE AMOUNT OF THE REDEMPTION.”
+      </div>
+
+      <br>
+
+      <strong>IF THE SHAREHOLDER IS AGE 59 ½ OR OLDER (Normal Distribution):</strong>
+      <br>
+      <div class="script">
+        “YOU MAY BE SUBJECT TO TAXES ON THE AMOUNT OF THE REDEMPTION”
+      </div>
+
+      <br>
+
+      <!--9-->
+
+      <strong>Federal & State Withholding</strong> (DO NOT ASK FOR ROTH IRAs) -
+      <br>
+      <div class="script">
+        “WOULD YOU LIKE US TO WITHHOLD A PERCENTAGE FOR FEDERAL TAXES?”
+      </div>
+
+      <br>
+
+      If the state is a <strong>mandatory withholding state</strong> and the caller
+      requests federal withholding:
+
+      <br>
+
+      <div class="script">
+        “SINCE YOU HAVE REQUESTED TO WITHHOLD FOR FEDERAL TAXES, <strong>(State name)</strong>
+        REQUIRES US TO WITHHOLD AT LEAST THE STATE MINIMUM FOR THEM AS WELL.”
+      </div>
+
+      <br>
+
+      To find the state minimum withholding percentage search in <strong>PSS HUB</strong>
+      by: <strong>State Tax Withholding</strong>
+      <br>
+
+      <strong>- Click on State Tax Withholding Job Aid – download PFS State Withholding
+      Matrix & check the State/Flat Tax column</strong>
+
+      <br><br>
+
+      <strong>Net vs Gross</strong> (IF NOT ALREADY CLARIFIED IN STEP 4) –
+      <br>
+      <div class="script">
+        “WOULD YOU LIKE THE WITHHOLDING AMOUNT TO BE DEDUCTED FROM THE AMOUNT REQUESTED (GROSS)
+        OR FROM THE REMAINING BALANCE OF THE FUND?” (NET)
+      </div>
+
+
+      <br><br>
+
+    </div>
+    <br>
+
+    <mark><strong>If the redemption is $30,000 or more, address or bank account has changed in
+    the last 3 months perform MFA.</strong></mark>
+
+    <br><br>
+
+    Ask how much the shareholder wants to withdraw.
+
+    <br><br>
+
+    <!--5-->
+
+
+    <strong>Check the CDSC Calculator – Ledger Menu > Execute > Telephone Redemptions >
+      CDSC Calculator </strong>
+    <br>
+    <strong>If a CDSC for Class C:</strong>
+    <br>
+
+    <div class="script">
+       “AS OF THE PREVIOUS DAYS’S MARKET CLOSE,
+      AND NOT INCLUDING ANY PENDING TRANSACTIONS ON YOUR PART OR OURS, TO REDEEM A NET
+      AMOUNT OF $xxx.xx FROM FUND xxxx, THERE WILL BE AN ESTIMATED CONTINGENT DEFERRED
+      SALES CHARGE OF $xx.xx.”
+    </div>
+
+    <strong>If no CDSC for Class C or Class A:</strong>
+    <br>
+    <div class="script">
+      “ASSUMING THERE ARE NO PENDING TRANSACTIONS ON YOUR SIDE OR OURS, AS OF
+      THE PREVIOUS BUSINESS DAYS’ MARKET CLOSE, THERE WILL BE NO CONTINGENT
+      DEFERRED SALES CHARGE FOR THE AMOUNT REQUESTED.”
+    </div>
+
+    <br>
+
+    <!--3-->
+
+    <strong>Check if banking is on record</strong> if no bank then just offer checking options
+    <br>
+    <strong>Offer at least 2 delivery methods</strong> - (Offer fund delivery to both the
+    AOR and the bank (if bank exists), then offer two (2) additional forms of delivery,
+    please see options listed below.)
+    <br>
+    <strong>If banking on file over 30 days:</strong>
+    <div class="script">
+      “WE CAN MAIL A CHECK TO YOUR
+      ADDRESS OF RECORD OR WE CAN SEND THE MONEY TO YOUR (state bank name) ACCOUNT
+      WITH THE LAST 4 DIGITS ENDING IN (last 4 of DDA # ).”
+    </div>
+
+    <strong>If sent to a bank:</strong>
+    <div class="script">
+      “AUTOMATED CLEARING HOUSE ARRIVES WITHIN
+      2 TO 3 BUSINESS DAYS AND IS FREE, OR FEDERAL WIRE ARRIVES WITHIN 1 TO 2
+      BUSINESS DAYS BUT YOUR BANK MAY CHARGE YOU A FEE.”
+    </div>
+
+
+    <strong>If no bank on file:</strong>
+    <div class="script">
+      “WE CAN MAIL A CHECK BY FIRST CLASS MAIL
+      WHICH WILL ARRIVE IN 7 TO 10 BUSINESS DAYS OR BY EXPRESS MAIL FOR A $12 FEE
+      WHICH WILL ARRIVE IN 2 TO 3 BUSINESS DAYS.”
+    </div>
+    <br>
+
+    <!--4-->
+
+    <strong>Mention any fees & Net vs Gross</strong> -
+    <br>
+    <strong>Express mail $12</strong> Partial Red: ASK which fund (if multiple)
+    fee is to be redeemed from, and if it will be deducted from the redemption
+    amount requested (GROSS), or the remaining balance of the fund (NET).
+    <br>
+    <strong>Full Red (or dropping below $100 in last fund position): Termination
+      $30 and Annual Custodian $25</strong>
+    <br>
+    <strong>Net vs Gross</strong> (IF NOT ALREADY CLARIFIED IN STEP 4) –
+    <br>
+    <div class="script">
+      “WOULD YOU LIKE THE ___FEE___ TO BE DEDUCTED FROM THE AMOUNT REQUESTED (GROSS)
+      OR FROM THE REMAINING BALANCE OF THE FUND?” (NET)
+      <br>
+      If the redemption is $30,000 or more, address or bank account has changed in
+      the last 3 months perform MFA.
+    </div>
+    <br>
+
+    <!--10-->
+
+    <strong>Process the Trade in CRM and Review the Trade Details - <mark>If the redemption
+      amount, per fund, is over $25,000 or a Federal Wire redemption or in the state of CT
+      create a Trade Log in Web Image in Web Image to be QC'd. </mark></strong>
+    <br><br>
+
+    <div class="script">
+      “YOU HAVE REQUESTED A REDEMPTION IN THE AMOUNT OF ___ (dollars/shares) FROM
+      (fund/class) ___ WITH THE THE LAST 4 DIGITS OF THE PRIMERICA ACCOUNT NUMBER
+      ENDING IN (last 4) XXXX“
+    </div>
+
+
+
+    <script type="text/javascript">
+
+      function currentTime() {
+          //var date = new Date().toLocaleTimeString();
+          //var hours = date.getHours();
+          //var min = date.getMinutes();
+
+          //return "It is currently <strong>" + date + "</strong>";
+          return "hi"
+      }
+
+      document.getElementById("time").innerHTML = currentTime();
+
+    </script>
+
+    <p id="time"></p>
+
+    <strong>IF BEFORE 4 PM EASTERN TIME:</strong>
+    <br>
+    <div class="script">
+      “THIS REDEMPTION WILL BE PROCESSED AS OF THE MARKET CLOSE TODAY___ (date in CRM)”
+    </div>
+    <strong>IF AFTER 4 PM EASTERN TIME:</strong>
+    <br>
+    <div class="script">
+      “THIS REDEMPTION WILL BE PROCESSED AS OF THE MARKET CLOSE THE NEXT BUSINESS
+      DAY___ (date in CRM).”
+    </div>
+    <br>
+
+    <strong>CHECK SENT BY FIRST CLASS MAIL:</strong>
+    <br>
+    <div class="script">
+      “A CHECK AND CONFIRMATION LETTER WILL BE SENT TO THE ADDRESS PREVIOUSLY
+      VERIFIED THE NEXT BUSINESS DAY, ARRIVING WITHIN 7 TO 10 BUSINESS DAYS.”
+    </div>
+
+    <strong>CHECK SENT BY EXPRESS MAIL:</strong>
+    <br>
+    <div class="script">
+      “THE CHECK WILL BE SENT TO THE ADDRESS PREVIOUSLY VERIFIED THE NEXT BUSINESS
+      DAY, ARRIVING WITHIN 2 TO 3 BUSINESS DAYS. A CONFIRMATION LETTER WILL ALSO BE
+      SENT OUT ARRIVING WITHIN 7 TO 10 BUSINESS DAYS.”
+    </div>
+
+    <br>
+
+    <strong>MONIES SENT TO THE BANK ACCOUNT BY ACH:</strong>
+    <br>
+    <div class="script">
+      “THE MONEY WILL BE SENT BY AUTOMATED CLEARING HOUSE TO THE BANK PREVIOUSLY
+      VERIFIED THE NEXT BUSINESS DAY, ARRIVING WITHIN 2 TO 3 BUSINESS DAYS. A
+      CONFIRMATION LETTER WILL ALSO BE SENT OUT ARRIVING TO THE ADDRESS OF RECORD
+      WITHIN 7 TO 10 BUSINESS DAYS.”
+    </div>
+    <strong>MONIES SENT TO THE BANK ACCOUNT BY FEDERAL WIRE:</strong>
+    <br>
+    <div class="script">
+      “THE MONEY WILL BE SENT BY FEDERAL WIRE TO THE BANK PREVIOUSLY VERIFIED THE
+      NEXT BUSINESS DAY, ARRIVING WITHIN 1 TO 2 BUSINESS DAYS. A CONFIRMATION
+      LETTER WILL ALSO BE SENT OUT ARRIVING TO THE ADDRESS OF RECORD WITHIN 7 TO 10
+      BUSINESS DAYS.”
+    </div>
+
+    <br>
+    <div class="script">
+      “YOU MAY BE ABLE TO DO A TAX FREE ROLLOVER INTO THIS OR ANOTHER IRA ACCOUNT
+      WITHIN 60 DAYS OF RECEIPT OF YOUR REDEMPTION IF YOU ARE ELIGIBLE. IF IT
+      APPLIES, A TAX FORM WILL BE GENERATED & MAILED TO YOU THE EARLY PART OF NEXT YEAR.
+      CAN YOU VERIFY YOUR PHONE NUMBER FOR ME? DO I HAVE PERMISSION TO SUBMIT YOUR REQUEST?
+    </div>
+
+    <br>
+
+    <!--11-->
+    <div class="script">
+    “WOULD YOU LIKE THE CONFIRMATION NUMBER FOR THE TRADE? THE CONFIRMATION NUMBER IS ___.”
+
+  </div>
+
+  <br><br>
+
+  <script>
+  var coll = document.getElementsByClassName("collapsible");
+  var i;
+
+  for (i = 0; i < coll.length; i++) {
+    coll[i].addEventListener("click", function() {
+      this.classList.toggle("active");
+      var content = this.nextElementSibling;
+      if (content.style.maxHeight){
+        content.style.maxHeight = null;
+      } else {
+        content.style.maxHeight = content.scrollHeight + "px";
+      }
+    });
+  }
+  </script>
+
+</body>
+
+</html>

@@ -1,0 +1,59 @@
+{"Mutual Funds":[
+  { "ticker":"SMTXX", "name":"Western Asset Government Reserves A2", "family":"Legg Mason" },
+
+  { "ticker":"SBCPX", "name":"QS Defensive Growth Fund", "family":"Legg Mason" },
+  { "ticker":"WABAX", "name":"Western Asset Core Bond Fund", "family":"Legg Mason" },
+  { "ticker":"WAPAX", "name":"Western Asset Core Plus Bond Fund", "family":"Legg Mason" },
+  { "ticker":"SIGAX", "name":"Western Asset Corporate Bond Fund", "family":"Legg Mason" },
+  { "ticker":"SDSAX", "name":"Western Asset Income Fund", "family":"Legg Mason" },
+  { "ticker":"SGVAX", "name":"Western Asset Mortgage Total Return Fund", "family":"Legg Mason" },
+
+  { "ticker":"SHRCX", "name":"Western Asset California Municipals Fund", "family":"Legg Mason" },
+  { "ticker":"ITCAX", "name":"Western Asset Intermediate Maturity CA Municipals Fund", "family":"Legg Mason" },
+  { "ticker":"IMNYX", "name":"Western Asset Intermediate Maturity NY Municipals Fund", "family":"Legg Mason" },
+  { "ticker":"SBLTX", "name":"Western Asset Intermediate Term Municipals Fund", "family":"Legg Mason" },
+  { "ticker":"SHMMX", "name":"Western Asset Managed Municipals Fund", "family":"Legg Mason" },
+  { "ticker":"SLMMX", "name":"Western Asset Massachusetts Municipals Fund", "family":"Legg Mason" },
+  { "ticker":"SHNJX", "name":"Western Asset New Jersey Municipals Fund", "family":"Legg Mason" },
+  { "ticker":"SBNYX", "name":"Western Asset New York Municipals Fund", "family":"Legg Mason" },
+  { "ticker":"SBPAX", "name":"Western Asset Pennsylvania Municipals Fund", "family":"Legg Mason" },
+  { "ticker":"SHDQX", "name":"Western Asset Short Duration Municipal Income Fund A2", "family":"Legg Mason" },
+
+  { "ticker":"SBBAX", "name":"QS Conservative Growth Fund", "family":"Legg Mason" },
+  { "ticker":"SCGRX", "name":"QS Moderate Growth Fund", "family":"Legg Mason" },
+
+  { "ticker":"LLVAX", "name":"Brandywine Global Diversified US Large Cap Value Fund A2", "family":"Legg Mason" },
+  { "ticker":"SHRAX", "name":"ClearBridge Aggressive Growth Fund", "family":"Legg Mason" },
+  { "ticker":"SHFVX", "name":"ClearBridge All Cap Value Fund", "family":"Legg Mason" },
+  { "ticker":"SHAPX", "name":"ClearBridge Appreciation Fund", "family":"Legg Mason" },
+  { "ticker":"SOPAX", "name":"ClearBridge Dividend Strategy Fund", "family":"Legg Mason" },
+  { "ticker":"SBLGX", "name":"ClearBridge Large Cap Growth Fund", "family":"Legg Mason" },
+  { "ticker":"LIVVX", "name":"ClearBridge Large Cap Value Fund A2", "family":"Legg Mason" },
+  { "ticker":"LBDAX", "name":"ClearBridge Tactical Dividend Income Fund A2", "family":"Legg Mason" },
+  { "ticker":"LMQSX", "name":"QS Global Dividend Fund A2", "family":"Legg Mason" },
+  { "ticker":"CFIPX", "name":"QS Global Equity Fund", "family":"Legg Mason" },
+  { "ticker":"SCHAX", "name":"QS Growth Fund", "family":"Legg Mason" },
+
+  { "ticker":"LOBAX", "name":"Brandywine Global Global Opportunities Bond Fund A2", "family":"Legg Mason" },
+  { "ticker":"LAATX", "name":"WA Macro Opportunities Fd Class A2", "family":"Legg Mason" },
+  { "ticker":"WRTUX", "name":"WA Total Return Unconstrained Fund A2", "family":"Legg Mason" },
+  { "ticker":"WEMDX", "name":"Western Asset Emerging Market Debt Fund A2", "family":"Legg Mason" },
+  { "ticker":"SAHYX", "name":"Western Asset Global High Yield Bond Fund", "family":"Legg Mason" },
+  { "ticker":"WHAYX", "name":"Western Asset High Yield Fund A2", "family":"Legg Mason" },
+  { "ticker":"STXAX", "name":"Western Asset Municipal High Income Fund *", "family":"Legg Mason" },
+  { "ticker":"SHIAX", "name":"Western Asset Short Duration High Income Fund", "family":"Legg Mason" },
+
+  { "ticker":"SBMAX", "name":"ClearBridge Mid Cap Fund", "family":"Legg Mason" },
+  { "ticker":"LCBGX", "name":"ClearBridge Mid Cap Growth Fund A2", "family":"Legg Mason" },
+  { "ticker":"LCLTX", "name":"ClearBridge Select Fund Class A2", "family":"Legg Mason" },
+  { "ticker":"SBVAX", "name":"ClearBridge Small Cap Value Fund", "family":"Legg Mason" },
+  { "ticker":"LBRTX", "name":"ClearBridge Small Cap Fund A2", "family":"Legg Mason" },
+  { "ticker":"LUSAX", "name":"QS US Small Capitalization Equity A2", "family":"Legg Mason" },
+  { "ticker":"LSRAX", "name":"QS Strategic Real Return Fund A2", "family":"Legg Mason" },
+
+  { "ticker":"LGGBX", "name":"ClearBridge International Growth Fund A2", "family":"Legg Mason" },
+  { "ticker":"LCRNX", "name":"ClearBridge International Small Cap Fund A2", "family":"Legg Mason" },
+  { "ticker":"SBIEX", "name":"ClearBridge International Value Fund", "family":"Legg Mason" },
+  { "ticker":"LIATX", "name":"QS International Equity Fund A2", "family":"Legg Mason" }
+
+]}

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<title>Call Scripts</title>
+
+	<link rel="stylesheet" href="stylesheet.css">
+
+
+</head>
+
+<body>
+
+	<div class="sidenav">
+	  <a href="index.html">Home</a>
+		<br>
+	  <a href="redemption.html">Redemption</a>
+		<a href="redemption_vol.html">Redemption - Voluntary</a>
+		<a href="purchase.html">Purchase</a>
+		<a href="exchange.html">Exchange</a>
+		<a href="address.html">Address Change</a>
+		<br>
+		<a href="lookup.html">Fund Lookup</a>
+	</div>
+
+	<div class="main">
+
+		<h1>BNY Mellon - Call Center Scripting</h1>
+		<h2>(Trade Desk)</h2>
+
+		<strong>If shareholder previously passed authentication:</strong>
+		<br>
+		<div class="script">
+			"THANK YOU FOR VERIFYING YOUR INFORMATION THROUGH OUR AUTOMATED SYSTEM. CAN I
+			GET YOUR FIRST AND LAST NAME?""
+		</div>
+
+		<br>
+
+		<strong>If shareholder did not go through security:</strong>
+		<br>
+		<div class="script">
+			"THANK YOU FOR CALLING PRIMERICA SHAREHOLDER SERVICES. MY NAME IS
+			<strong>CHARLES</strong> AND MY OPERATOR ID IS <strong>6-9583</strong>. HOW
+			CAN I HELP YOU TODAY?"
+		</div>
+
+		<br>
+
+		<div class="script">
+			"I'LL BE GLAD TO HELP YOU WITH THAT."
+		</div>
+
+		<br>
+
+		<div class="script">
+			"CAN I GET YOUR ACCOUNT NUMBER OR SOCIAL SECURITY NUMBER?"
+		</div>
+
+		<br>
+
+		<div class="script">
+			"CAN YOU BEAR WITH ME FOR A MOMENT WHILE I ACCESS YOUR ACCOUNT?"
+		</div>
+
+		<br>
+
+		<div class="script">
+			"THANK YOU FOR YOUR PATIENCE"
+		</div>
+
+		<div class="script">
+		<ul>
+			<li>CAN I GET YOUR FULL NAME?</li>
+				THANK YOU, MR./MRS. <strong>[LASTNAME]</strong>
+			<li>ADDRESS?</li>
+			<li>DATE OF BIRTH?</li>
+			<li>CAN YOU ALSO GIVE ME AN APPROXIMATE ACCOUNT BALANCE IN DOLLARS?</li>
+		</ul>
+		</div>
+
+		<div class="script">
+			"WOULD YOU LIKE AN EXACT ACCOUNT BALANCE?"
+		</div>
+
+		<br>
+
+		<strong>If one fund, automatically give fund, number of share, price and
+			total price:</strong>
+		<br><br>
+
+		<strong>If more than one fund position offer to break down positons</strong>
+		<div class="script">
+			"DO YOU NEED THE BREAKDOWN OF THE ___#___ FUNDS OR DO YOU WANT THE GENERAL
+			ACCOUNT BALANCE? AS OF _______ YOUR ACCOUNT BALANCE IS _______"
+		</div>
+
+		<br>
+
+		<iframe src="lookup2.html" width=100% height="500px"></iframe>
+
+		<br>
+
+		<div class="script">
+			THANK YOU FOR CALLING PRIMERICA SHAREHOLDER SERVICES.
+		</div>
+
+		<br>
+
+		<!--
+		How many guesses are they allowed to have?
+
+		Money Draft = PAC
+		-->
+		<div class="script">
+			I CAN REFER YOU TO AN AGENT. JUST GIVE THEM YOUR ACCOUNT NUMBER AND THEY CAN
+			HELP YOU.
+		</div>
+
+		<br><br>
+
+	</div>
+
+</body>
+
+</html>

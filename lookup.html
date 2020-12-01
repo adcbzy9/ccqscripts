@@ -1,0 +1,2308 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<title>Call Scripts</title>
+
+	<link rel="stylesheet" href="stylesheet.css">
+
+</head>
+
+<body>
+
+	<div class="sidenav">
+	  <a href="index.html">Home</a>
+		<br>
+	  <a href="redemption.html">Redemption</a>
+		<a href="redemption_vol.html">Redemption - Voluntary</a>
+		<a href="purchase.html">Purchase</a>
+		<a href="exchange.html">Exchange</a>
+		<a href="address.html">Address Change</a>
+		<br>
+		<a href="lookup.html">Fund Lookup</a>
+	</div>
+
+  <div class="main">
+
+    <h1>Fund Symbol Lookup</h1>
+
+    <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for fund">
+
+    <table id="myTable">
+      <tr class="header">
+        <th style="width:10%;">Symbol</th>
+        <th style="width:60%;">Name</th>
+				<th style="width:10%;">Class</th>
+        <th style="width:30%;">Family</th>
+      </tr>
+
+			<tr>
+			<td>SMTXX</td><td>Western Asset Government Reserves A2</td><td>A</td><td>Legg Mason</td>
+			</tr>
+			<tr>
+
+			<td>SBCPX</td><td>QS Defensive Growth Fund</td><td>A</td><td>Legg Mason</td>
+			</tr>
+			<tr>
+			<td>WABAX</td><td>Western Asset Core Bond Fund</td><td>A</td><td>Legg Mason</td>
+			</tr>
+			<tr>
+			<td>WAPAX</td><td>Western Asset Core Plus Bond Fund</td><td>A</td><td>Legg Mason</td>
+			</tr>
+			<tr>
+			<td>SIGAX</td><td>Western Asset Corporate Bond Fund</td><td>A</td><td>Legg Mason</td>
+			</tr>
+			<tr>
+			<td>SDSAX</td><td>Western Asset Income Fund</td><td>A</td><td>Legg Mason</td>
+			</tr>
+			<tr>
+			<td>SGVAX</td><td>Western Asset Mortgage Total Return Fund</td><td>A</td><td>Legg Mason</td>
+			</tr>
+			<tr>
+
+			<td>SHRCX</td><td>Western Asset California Municipals Fund</td><td>A</td><td>Legg Mason</td>
+			</tr>
+			<tr>
+			<td>ITCAX</td><td>Western Asset Intermediate Maturity CA Municipals Fund</td><td>A</td><td>Legg Mason</td>
+			</tr>
+			<tr>
+			<td>IMNYX</td><td>Western Asset Intermediate Maturity NY Municipals Fund</td><td>A</td><td>Legg Mason</td>
+			</tr>
+			<tr>
+			<td>SBLTX</td><td>Western Asset Intermediate Term Municipals Fund</td><td>A</td><td>Legg Mason</td>
+			</tr>
+			<tr>
+			<td>SHMMX</td><td>Western Asset Managed Municipals Fund</td><td>A</td><td>Legg Mason</td>
+			</tr>
+			<tr>
+			<td>SLMMX</td><td>Western Asset Massachusetts Municipals Fund</td><td>A</td><td>Legg Mason</td>
+			</tr>
+			<tr>
+			<td>SHNJX</td><td>Western Asset New Jersey Municipals Fund</td><td>A</td><td>Legg Mason</td>
+			</tr>
+			<tr>
+			<td>SBNYX</td><td>Western Asset New York Municipals Fund</td><td>A</td><td>Legg Mason</td>
+			</tr>
+			<tr>
+			<td>SBPAX</td><td>Western Asset Pennsylvania Municipals Fund</td><td>A</td><td>Legg Mason</td>
+			</tr>
+			<tr>
+			<td>SHDQX</td><td>Western Asset Short Duration Municipal Income Fund A2</td><td>A</td><td>Legg Mason</td>
+			</tr>
+			<tr>
+
+			<td>SBBAX</td><td>QS Conservative Growth Fund</td><td>A</td><td>Legg Mason</td>
+			</tr>
+			<tr>
+			<td>SCGRX</td><td>QS Moderate Growth Fund</td><td>A</td><td>Legg Mason</td>
+			</tr>
+			<tr>
+
+			<td>LLVAX</td><td>Brandywine Global Diversified US Large Cap Value Fund A2</td><td>A</td><td>Legg Mason</td>
+			</tr>
+			<tr>
+			<td>SHRAX</td><td>ClearBridge Aggressive Growth Fund</td><td>A</td><td>Legg Mason</td>
+			</tr>
+			<tr>
+			<td>SHFVX</td><td>ClearBridge All Cap Value Fund</td><td>A</td><td>Legg Mason</td>
+			</tr>
+			<tr>
+			<td>SHAPX</td><td>ClearBridge Appreciation Fund</td><td>A</td><td>Legg Mason</td>
+			</tr>
+			<tr>
+			<td>SOPAX</td><td>ClearBridge Dividend Strategy Fund</td><td>A</td><td>Legg Mason</td>
+			</tr>
+			<tr>
+			<td>SBLGX</td><td>ClearBridge Large Cap Growth Fund</td><td>A</td><td>Legg Mason</td>
+			</tr>
+			<tr>
+			<td>LIVVX</td><td>ClearBridge Large Cap Value Fund A2</td><td>A</td><td>Legg Mason</td>
+			</tr>
+			<tr>
+			<td>LBDAX</td><td>ClearBridge Tactical Dividend Income Fund A2</td><td>A</td><td>Legg Mason</td>
+			</tr>
+			<tr>
+			<td>LMQSX</td><td>QS Global Dividend Fund A2</td><td>A</td><td>Legg Mason</td>
+			</tr>
+			<tr>
+			<td>CFIPX</td><td>QS Global Equity Fund</td><td>A</td><td>Legg Mason</td>
+			</tr>
+			<tr>
+			<td>SCHAX</td><td>QS Growth Fund</td><td>A</td><td>Legg Mason</td>
+			</tr>
+			<tr>
+
+			<td>LOBAX</td><td>Brandywine Global Global Opportunities Bond Fund A2</td><td>A</td><td>Legg Mason</td>
+			</tr>
+			<tr>
+			<td>LAATX</td><td>WA Macro Opportunities Fd Class A2</td><td>A</td><td>Legg Mason</td>
+			</tr>
+			<tr>
+			<td>WRTUX</td><td>WA Total Return Unconstrained Fund A2</td><td>A</td><td>Legg Mason</td>
+			</tr>
+			<tr>
+			<td>WEMDX</td><td>Western Asset Emerging Market Debt Fund A2</td><td>A</td><td>Legg Mason</td>
+			</tr>
+			<tr>
+			<td>SAHYX</td><td>Western Asset Global High Yield Bond Fund</td><td>A</td><td>Legg Mason</td>
+			</tr>
+			<tr>
+			<td>WHAYX</td><td>Western Asset High Yield Fund A2</td><td>A</td><td>Legg Mason</td>
+			</tr>
+			<tr>
+			<td>STXAX</td><td>Western Asset Municipal High Income Fund *</td><td>A</td><td>Legg Mason</td>
+			</tr>
+			<tr>
+			<td>SHIAX</td><td>Western Asset Short Duration High Income Fund</td><td>A</td><td>Legg Mason</td>
+			</tr>
+			<tr>
+
+			<td>SBMAX</td><td>ClearBridge Mid Cap Fund</td><td>A</td><td>Legg Mason</td>
+			</tr>
+			<tr>
+			<td>LCBGX</td><td>ClearBridge Mid Cap Growth Fund A2</td><td>A</td><td>Legg Mason</td>
+			</tr>
+			<tr>
+			<td>LCLTX</td><td>ClearBridge Select Fund Class A2</td><td>A</td><td>Legg Mason</td>
+			</tr>
+			<tr>
+			<td>SBVAX</td><td>ClearBridge Small Cap Value Fund</td><td>A</td><td>Legg Mason</td>
+			</tr>
+			<tr>
+			<td>LBRTX</td><td>ClearBridge Small Cap Fund A2</td><td>A</td><td>Legg Mason</td>
+			</tr>
+			<tr>
+			<td>LUSAX</td><td>QS US Small Capitalization Equity A2</td><td>A</td><td>Legg Mason</td>
+			</tr>
+			<tr>
+			<td>LSRAX</td><td>QS Strategic Real Return Fund A2</td><td>A</td><td>Legg Mason</td>
+			</tr>
+			<tr>
+
+			<td>LGGBX</td><td>ClearBridge International Growth Fund A2</td><td>A</td><td>Legg Mason</td>
+			</tr>
+			<tr>
+			<td>LCRNX</td><td>ClearBridge International Small Cap Fund A2</td><td>A</td><td>Legg Mason</td>
+			</tr>
+			<tr>
+			<td>SBIEX</td><td>ClearBridge International Value Fund</td><td>A</td><td>Legg Mason</td>
+			</tr>
+			<tr>
+			<td>LIATX</td><td>QS International Equity Fund A2</td><td>A</td><td>Legg Mason</td>
+			</tr>
+			<tr>
+
+			<td>AIMXX</td><td>Invesco Government Money Market Fund</td><td>A</td><td>Invesco</td>
+			</tr>
+			<tr>
+			<td>CSNXX</td><td>Invesco Government Money Market Fund</td><td>B</td><td>Invesco</td>
+			</tr>
+			<tr>
+			<td>GMQXX</td><td>Invesco U. S. Government Money Portfolio</td><td>A</td><td>Invesco</td>
+			</tr>
+			<tr>
+
+			<td>ACPSX</td><td>Invesco Core Plus Bond Fund</td><td>A</td><td>Invesco</td>
+			</tr>
+			<tr>
+			<td>CPBRX</td><td>Invesco Core Plus Bond Fund</td><td>B</td><td>Invesco</td>
+			</tr>
+			<tr>
+			<td>OPIGX</td><td>Invesco Core Bond Fund</td><td>A</td><td>Invesco</td>
+			</tr>
+			<tr>
+			<td>OPBNX</td><td>Invesco Core Bond Fund</td><td>B</td><td>Invesco</td>
+			</tr>
+			<tr>
+			<td>ACCBX</td><td>Invesco Corporate Bond Fund</td><td>A</td><td>Invesco</td>
+			</tr>
+			<tr>
+			<td>ACCZX</td><td>Invesco Corporate Bond Fund</td><td>B</td><td>Invesco</td>
+			</tr>
+			<tr>
+			<td>ALAAX</td><td>Invesco Income Allocation Fund</td><td>A</td><td>Invesco</td>
+			</tr>
+			<tr>
+			<td>RLIAX</td><td>Invesco Income Allocation Fund</td><td>B</td><td>Invesco</td>
+			</tr>
+			<tr>
+			<td>OFIAX</td><td>Invesco Intermediate Bond Factor Fund</td><td>A</td><td>Invesco</td>
+			</tr>
+			<tr>
+			<td>OFINX</td><td>Invesco Intermediate Bond Factor Fund</td><td>B</td><td>Invesco</td>
+			</tr>
+			<tr>
+			<td>PIAFX</td><td>Invesco Multi-Asset Income Fund</td><td>A</td><td>Invesco</td>
+			</tr>
+			<tr>
+			<td>PIRFX</td><td>Invesco Multi-Asset Income Fund</td><td>B</td><td>Invesco</td>
+			</tr>
+			<tr>
+			<td>VKMGX</td><td>Invesco Quality Income Fund</td><td>A</td><td>Invesco</td>
+			</tr>
+			<tr>
+			<td>LMTAX</td><td>Invesco Short Duration Inflation Protected Fund</td><td>A</td><td>Invesco</td>
+			</tr>
+			<tr>
+			<td>STBAX</td><td>Invesco Short Term Bond Fund</td><td>A</td><td>Invesco</td>
+			</tr>
+			<tr>
+			<td>STBRX</td><td>Invesco Short Term Bond Fund</td><td>B</td><td>Invesco</td>
+			</tr>
+			<tr>
+
+			<td>ACTHX</td><td>Invesco High Yield Municipal Fund</td><td>A</td><td>Invesco</td>
+			</tr>
+			<tr>
+			<td>VKLMX</td><td>Invesco Intermediate Term Municipal Income Fund</td><td>A</td><td>Invesco</td>
+			</tr>
+			<tr>
+			<td>ATFAX</td><td>Invesco Limited Term Municipal Income Fund</td><td>A</td><td>Invesco</td>
+			</tr>
+			<tr>
+			<td>OUSNX</td><td>Invesco Limited Term Municipal Income Fund</td><td>B</td><td>Invesco</td>
+			</tr>
+			<tr>
+			<td>VKMMX</td><td>Invesco Municipal Income Fund</td><td>A</td><td>Invesco</td>
+			</tr>
+			<tr>
+			<td>OPAMX</td><td>Invesco Environmental Focus Municipal Fund</td><td>A</td><td>Invesco</td>
+			</tr>
+			<tr>
+			<td>OPTAX</td><td>Invesco AMT-Free Municipal Fund</td><td>A</td><td>Invesco</td>
+			</tr>
+			<tr>
+			<td>OPNYX</td><td>Invesco Rochester AMT-Free New York Municipal Fund</td><td>A</td><td>Invesco</td>
+			</tr>
+			<tr>
+			<td>OPCAX</td><td>Invesco California Municipal Fund</td><td>A</td><td>Invesco</td>
+			</tr>
+			<tr>
+			<td>OLCAX</td><td>Invesco Limited Term California Municipal Fund</td><td>A</td><td>Invesco</td>
+			</tr>
+			<tr>
+			<td>LTNYX</td><td>Invesco Rochester Limited Term New York Municipal Fund</td><td>A</td><td>Invesco</td>
+			</tr>
+			<tr>
+			<td>RMUNX</td><td>Invesco Rochester New York Municipals Fund</td><td>A</td><td>Invesco</td>
+			</tr>
+			<tr>
+			<td>ONJAX</td><td>Invesco New Jersey Municipal Fund</td><td>A</td><td>Invesco</td>
+			</tr>
+			<tr>
+			<td>OPATX</td><td>Invesco Pennsylvania Municipal Fund</td><td>A</td><td>Invesco</td>
+			</tr>
+			<tr>
+			<td>ORSTX</td><td>Invesco Short Term Municipal Fund</td><td>A</td><td>Invesco</td>
+			</tr>
+			<tr>
+
+			<td>ABRZX</td><td>Invesco Balanced-Risk Allocation Fund</td><td>A</td><td>Invesco</td>
+			</tr>
+			<tr>
+			<td>ABRRX</td><td>Invesco Balanced-Risk Allocation Fund</td><td>B</td><td>Invesco</td>
+			</tr>
+			<tr>
+			<td>CNSAX</td><td>Invesco Convertible Securities Fund</td><td>A</td><td>Invesco</td>
+			</tr>
+			<tr>
+			<td>ACEIX</td><td>Invesco Equity and Income Fund</td><td>A</td><td>Invesco</td>
+			</tr>
+			<tr>
+			<td>ACESX</td><td>Invesco Equity and Income Fund</td><td>B</td><td>Invesco</td>
+			</tr>
+			<tr>
+			<td>QVOPX</td><td>Invesco Fundamental Alternatives Fund</td><td>A</td><td>Invesco</td>
+			</tr>
+			<tr>
+			<td>QOPNX</td><td>Invesco Fundamental Alternatives Fund</td><td>B</td><td>Invesco</td>
+			</tr>
+			<tr>
+			<td>OACIX</td><td>Invesco Select Risk: Conservative Investor Fund</td><td>A</td><td>Invesco</td>
+			</tr>
+			<tr>
+			<td>ONCIX</td><td>Invesco Select Risk: Conservative Investor Fund</td><td>B</td><td>Invesco</td>
+			</tr>
+			<tr>
+			<td>OAMIX</td><td>Invesco Select Risk: Moderate Investor Fund</td><td>A</td><td>Invesco</td>
+			</tr>
+			<tr>
+			<td>ONMIX</td><td>Invesco Select Risk: Moderate Investor Fund</td><td>B</td><td>Invesco</td>
+			</tr>
+			<tr>
+			<td>CAAMX</td><td>Invesco Select Risk: Moderately Conservative Investor Fund</td><td>A</td><td>Invesco</td>
+			</tr>
+			<tr>
+			<td>CMARX</td><td>Invesco Select Risk: Moderately Conservative Investor Fund</td><td>B</td><td>Invesco</td>
+			</tr>
+			<tr>
+
+			<td>OAAAX</td><td>Invesco Active Allocation Fund</td><td>A</td><td>Invesco</td>
+			</tr>
+			<tr>
+			<td>OAANX</td><td>Invesco Active Allocation Fund</td><td>B</td><td>Invesco</td>
+			</tr>
+			<tr>
+			<td>VAFAX</td><td>Invesco American Franchise Fund</td><td>A</td><td>Invesco</td>
+			</tr>
+			<tr>
+			<td>VAFRX</td><td>Invesco American Franchise Fund</td><td>B</td><td>Invesco</td>
+			</tr>
+			<tr>
+			<td>MSAVX</td><td>Invesco American Value Fund</td><td>A</td><td>Invesco</td>
+			</tr>
+			<tr>
+			<td>MSARX</td><td>Invesco American Value Fund</td><td>B</td><td>Invesco</td>
+			</tr>
+			<tr>
+			<td>CHTRX</td><td>Invesco Charter Fund</td><td>A</td><td>Invesco</td>
+			</tr>
+			<tr>
+			<td>CHRRX</td><td>Invesco Charter Fund</td><td>B</td><td>Invesco</td>
+			</tr>
+			<tr>
+			<td>ACSTX</td><td>Invesco Comstock Fund</td><td>A</td><td>Invesco</td>
+			</tr>
+			<tr>
+			<td>ACSRX</td><td>Invesco Comstock Fund</td><td>B</td><td>Invesco</td>
+			</tr>
+			<tr>
+			<td>CGRWX</td><td>Invesco Comstock Select Fund</td><td>A</td><td>Invesco</td>
+			</tr>
+			<tr>
+			<td>CGRNX</td><td>Invesco Comstock Select Fund</td><td>B</td><td>Invesco</td>
+			</tr>
+			<tr>
+			<td>LCEAX</td><td>Invesco Diversified Dividend Fund</td><td>A</td><td>Invesco</td>
+			</tr>
+			<tr>
+			<td>DDFRX</td><td>Invesco Diversified Dividend Fund</td><td>B</td><td>Invesco</td>
+			</tr>
+			<tr>
+			<td>IAUTX</td><td>Invesco Dividend Income Fund</td><td>A</td><td>Invesco</td>
+			</tr>
+			<tr>
+			<td>IRTCX</td><td>Invesco Dividend Income Fund</td><td>B</td><td>Invesco</td>
+			</tr>
+			<tr>
+			<td>VADAX</td><td>Invesco Equally Weighted S&P 500 Fund</td><td>A</td><td>Invesco</td>
+			</tr>
+			<tr>
+			<td>VADRX</td><td>Invesco Equally Weighted S&P 500 Fund</td><td>B</td><td>Invesco</td>
+			</tr>
+			<tr>
+			<td>AWSAX</td><td>Invesco Global Core Equity Fund</td><td>A</td><td>Invesco</td>
+			</tr>
+			<tr>
+			<td>AWSRX</td><td>Invesco Global Core Equity Fund</td><td>B</td><td>Invesco</td>
+			</tr>
+			<tr>
+			<td>AGGAX</td><td>Invesco Global Growth Fund</td><td>A</td><td>Invesco</td>
+			</tr>
+			<tr>
+			<td>ACGIX</td><td>Invesco Growth and Income Fund</td><td>A</td><td>Invesco</td>
+			</tr>
+			<tr>
+			<td>ACGLX</td><td>Invesco Growth and Income Fund</td><td>B</td><td>Invesco</td>
+			</tr>
+			<tr>
+			<td>SCAUX</td><td>Invesco Low Volatility Equity Yield Fund</td><td>A</td><td>Invesco</td>
+			</tr>
+			<tr>
+			<td>SCRUX</td><td>Invesco Low Volatility Equity Yield Fund</td><td>B</td><td>Invesco</td>
+			</tr>
+			<tr>
+			<td>OPTFX</td><td>Invesco Capital Appreciation Fund</td><td>A</td><td>Invesco</td>
+			</tr>
+			<tr>
+			<td>OTCNX</td><td>Invesco Capital Appreciation Fund</td><td>B</td><td>Invesco</td>
+			</tr>
+			<tr>
+			<td>QVGIX</td><td>Invesco Global Allocation Fund</td><td>A</td><td>Invesco</td>
+			</tr>
+			<tr>
+			<td>QGRNX</td><td>Invesco Global Allocation Fund</td><td>B</td><td>Invesco</td>
+			</tr>
+			<tr>
+			<td>GLVAX</td><td>Invesco Global Focus Fund</td><td>A</td><td>Invesco</td>
+			</tr>
+			<tr>
+			<td>GLVNX</td><td>Invesco Global Focus Fund</td><td>B</td><td>Invesco</td>
+			</tr>
+			<tr>
+			<td>OPPAX</td><td>Invesco Global Fund</td><td>A</td><td>Invesco</td>
+			</tr>
+			<tr>
+			<td>OGLNX</td><td>Invesco Global Fund</td><td>B</td><td>Invesco</td>
+			</tr>
+			<tr>
+			<td>OMSOX</td><td>Invesco Main Street All Cap Fund</td><td>A</td><td>Invesco</td>
+			</tr>
+			<tr>
+			<td>OMSNX</td><td>Invesco Main Street All Cap Fund</td><td>B</td><td>Invesco</td>
+			</tr>
+			<tr>
+			<td>MSIGX</td><td>Invesco Main Street Fund</td><td>A</td><td>Invesco</td>
+			</tr>
+			<tr>
+			<td>OMGNX</td><td>Invesco Main Street Fund</td><td>B</td><td>Invesco</td>
+			</tr>
+			<tr>
+			<td>OARDX</td><td>Invesco Rising Dividends Fund</td><td>A</td><td>Invesco</td>
+			</tr>
+			<tr>
+			<td>ONRDX</td><td>Invesco Rising Dividends Fund</td><td>B</td><td>Invesco</td>
+			</tr>
+			<tr>
+			<td>AADAX</td><td>Invesco Select Risk: Growth Investor Fund</td><td>A</td><td>Invesco</td>
+			</tr>
+			<tr>
+			<td>AADRX</td><td>Invesco Select Risk: Growth Investor Fund</td><td>B</td><td>Invesco</td>
+			</tr>
+			<tr>
+			<td>ASMMX</td><td>Invesco Summit Fund</td><td>A</td><td>Invesco</td>
+			</tr>
+			<tr>
+
+			<td>AFRAX</td><td>Invesco Floating Rate ESG Fund</td><td>A</td><td>Invesco</td>
+			</tr>
+			<tr>
+			<td>AFRRX</td><td>Invesco Floating Rate ESG Fund</td><td>B</td><td>Invesco</td>
+			</tr>
+			<tr>
+			<td>AMHYX</td><td>Invesco High Yield Fund</td><td>A</td><td>Invesco</td>
+			</tr>
+			<tr>
+			<td>AGOVX</td><td>Invesco Income Fund</td><td>A</td><td>Invesco</td>
+			</tr>
+			<tr>
+			<td>AGVRX</td><td>Invesco Income Fund</td><td>B</td><td>Invesco</td>
+			</tr>
+			<tr>
+			<td>OPSIX</td><td>Invesco Global Strategic Income Fund</td><td>A</td><td>Invesco</td>
+			</tr>
+			<tr>
+			<td>OSINX</td><td>Invesco Global Strategic Income Fund</td><td>B</td><td>Invesco</td>
+			</tr>
+			<tr>
+			<td>OIBAX</td><td>Invesco International Bond Fund</td><td>A</td><td>Invesco</td>
+			</tr>
+			<tr>
+			<td>OIBNX</td><td>Invesco International Bond Fund</td><td>B</td><td>Invesco</td>
+			</tr>
+			<tr>
+			<td>ORNAX</td><td>Invesco Rochester Municipal Opportunities Fund</td><td>A</td><td>Invesco</td>
+			</tr>
+			<tr>
+			<td>OOSAX</td><td>Invesco Senior Floating Rate Fund</td><td>A</td><td>Invesco</td>
+			</tr>
+			<tr>
+			<td>OOSNX</td><td>Invesco Senior Floating Rate Fund</td><td>B</td><td>Invesco</td>
+			</tr>
+			<tr>
+			<td>VSLAX</td><td>Invesco Senior Loan Fund</td><td>A</td><td>Invesco</td>
+			</tr>
+			<tr>
+			<td>ISHAX</td><td>Invesco Short Duration High Yield Muni Fund</td><td>A</td><td>Invesco</td>
+			</tr>
+			<tr>
+
+			<td>GTNDX</td><td>Invesco Global Low Volatility Equity Yield Fund</td><td>A</td><td>Invesco</td>
+			</tr>
+			<tr>
+			<td>GTNRX</td><td>Invesco Global Low Volatility Equity Yield Fund</td><td>B</td><td>Invesco</td>
+			</tr>
+			<tr>
+			<td>OEGAX</td><td>Invesco Discovery Mid Cap Growth Fund</td><td>A</td><td>Invesco</td>
+			</tr>
+			<tr>
+			<td>OEGNX</td><td>Invesco Discovery Mid Cap Growth Fund</td><td>B</td><td>Invesco</td>
+			</tr>
+			<tr>
+			<td>OPGIX</td><td>Invesco Global Opportunities Fund</td><td>A</td><td>Invesco</td>
+			</tr>
+			<tr>
+			<td>OGINX</td><td>Invesco Global Opportunities Fund</td><td>B</td><td>Invesco</td>
+			</tr>
+			<tr>
+			<td>OPMSX</td><td>Invesco Main Street Mid Cap Fund</td><td>A</td><td>Invesco</td>
+			</tr>
+			<tr>
+			<td>OPMNX</td><td>Invesco Main Street Mid Cap Fund</td><td>B</td><td>Invesco</td>
+			</tr>
+			<tr>
+			<td>ATIAX</td><td>Invesco Select Companies Fund</td><td>A</td><td>Invesco</td>
+			</tr>
+			<tr>
+			<td>ATIRX</td><td>Invesco Select Companies Fund</td><td>B</td><td>Invesco</td>
+			</tr>
+			<tr>
+			<td>OAAIX</td><td>Invesco Select Risk: High Growth Investor Fund</td><td>A</td><td>Invesco</td>
+			</tr>
+			<tr>
+			<td>ONAIX</td><td>Invesco Select Risk: High Growth Investor Fund</td><td>B</td><td>Invesco</td>
+			</tr>
+			<tr>
+			<td>SMEAX</td><td>Invesco Small Cap Equity Fund</td><td>A</td><td>Invesco</td>
+			</tr>
+			<tr>
+			<td>SMERX</td><td>Invesco Small Cap Equity Fund</td><td>B</td><td>Invesco</td>
+			</tr>
+			<tr>
+			<td>VSCAX</td><td>Invesco Small Cap Value Fund</td><td>A</td><td>Invesco</td>
+			</tr>
+			<tr>
+			<td>VSRAX</td><td>Invesco Small Cap Value Fund</td><td>B</td><td>Invesco</td>
+			</tr>
+			<tr>
+
+			<td>BRCAX</td><td>Invesco Balanced-Risk Commodity Strategy Fund</td><td>A</td><td>Invesco</td>
+			</tr>
+			<tr>
+			<td>BRCRX</td><td>Invesco Balanced-Risk Commodity Strategy Fund</td><td>B</td><td>Invesco</td>
+			</tr>
+			<tr>
+			<td>IENAX</td><td>Invesco Energy Fund</td><td>A</td><td>Invesco</td>
+			</tr>
+			<tr>
+			<td>AGREX</td><td>Invesco Global Real Estate Fund</td><td>A</td><td>Invesco</td>
+			</tr>
+			<tr>
+			<td>RGREX</td><td>Invesco Global Real Estate Fund</td><td>B</td><td>Invesco</td>
+			</tr>
+			<tr>
+			<td>ASRAX</td><td>Invesco Global Real Estate Income Fund</td><td>A</td><td>Invesco</td>
+			</tr>
+			<tr>
+			<td>GGHCX</td><td>Invesco Health Care Fund</td><td>A</td><td>Invesco</td>
+			</tr>
+			<tr>
+			<td>OEMAX</td><td>Invesco Emerging Markets Local Debt Fund</td><td>A</td><td>Invesco</td>
+			</tr>
+			<tr>
+			<td>OEMNX</td><td>Invesco Emerging Markets Local Debt Fund</td><td>B</td><td>Invesco</td>
+			</tr>
+			<tr>
+			<td>OPGSX</td><td>Invesco Gold & Special Minerals Fund</td><td>A</td><td>Invesco</td>
+			</tr>
+			<tr>
+			<td>OGMNX</td><td>Invesco Gold & Special Minerals Fund</td><td>B</td><td>Invesco</td>
+			</tr>
+			<tr>
+			<td>MLPAX</td><td>Invesco SteelPath MLP Alpha Fund</td><td>A</td><td>Invesco</td>
+			</tr>
+			<tr>
+			<td>SPMGX</td><td>Invesco SteelPath MLP Alpha Fund</td><td>B</td><td>Invesco</td>
+			</tr>
+			<tr>
+			<td>MLPDX</td><td>Invesco SteelPath MLP Income Fund</td><td>A</td><td>Invesco</td>
+			</tr>
+			<tr>
+			<td>SPNNX</td><td>Invesco SteelPath MLP Income Fund</td><td>B</td><td>Invesco</td>
+			</tr>
+			<tr>
+			<td>MLPFX</td><td>Invesco SteelPath MLP Select 40 Fund</td><td>A</td><td>Invesco</td>
+			</tr>
+			<tr>
+			<td>SPMWX</td><td>Invesco SteelPath MLP Select 40 Fund</td><td>B</td><td>Invesco</td>
+			</tr>
+			<tr>
+			<td>IARAX</td><td>Invesco Real Estate Fund</td><td>A</td><td>Invesco</td>
+			</tr>
+			<tr>
+			<td>IARRX</td><td>Invesco Real Estate Fund</td><td>B</td><td>Invesco</td>
+			</tr>
+			<tr>
+			<td>ITYAX</td><td>Invesco Technology Fund</td><td>A</td><td>Invesco</td>
+			</tr>
+			<tr>
+
+			<td>ASIAX</td><td>Invesco Asia Pacific Growth Fund</td><td>A</td><td>Invesco</td>
+			</tr>
+			<tr>
+			<td>GTDDX</td><td>Invesco Emerging Markets All Cap Fund</td><td>A</td><td>Invesco</td>
+			</tr>
+			<tr>
+			<td>IEMAX</td><td>Invesco Emerging Markets Select Equity</td><td>A</td><td>Invesco</td>
+			</tr>
+			<tr>
+			<td>IEMRX</td><td>Invesco Emerging Markets Select Equity</td><td>B</td><td>Invesco</td>
+			</tr>
+			<tr>
+			<td>AEDAX</td><td>Invesco European Growth Fund</td><td>A</td><td>Invesco</td>
+			</tr>
+			<tr>
+			<td>AEDRX</td><td>Invesco European Growth Fund</td><td>B</td><td>Invesco</td>
+			</tr>
+			<tr>
+			<td>ESMAX</td><td>Invesco European Small Company Fund</td><td>A</td><td>Invesco</td>
+			</tr>
+			<tr>
+			<td>AACFX</td><td>Invesco Greater China Fund</td><td>A</td><td>Invesco</td>
+			</tr>
+			<tr>
+			<td>IBVAX</td><td>Invesco International Core Equity Fund</td><td>A</td><td>Invesco</td>
+			</tr>
+			<tr>
+			<td>IIBRX</td><td>Invesco International Core Equity Fund</td><td>B</td><td>Invesco</td>
+			</tr>
+			<tr>
+			<td>AIIEX</td><td>Invesco International Growth Fund</td><td>A</td><td>Invesco</td>
+			</tr>
+			<tr>
+			<td>AIERX</td><td>Invesco International Growth Fund</td><td>B</td><td>Invesco</td>
+			</tr>
+			<tr>
+			<td>IZIAX</td><td>Invesco International Select Equity Fund</td><td>A</td><td>Invesco</td>
+			</tr>
+			<tr>
+			<td>IZIRX</td><td>Invesco International Select Equity Fund</td><td>B</td><td>Invesco</td>
+			</tr>
+			<tr>
+			<td>IEGAX</td><td>Invesco International Small Company Fund</td><td>A</td><td>Invesco</td>
+			</tr>
+			<tr>
+			<td>EMIAX</td><td>Invesco Emerging Markets Innovators Fund</td><td>A</td><td>Invesco</td>
+			</tr>
+			<tr>
+			<td>EMIRX</td><td>Invesco Emerging Markets Innovators Fund</td><td>B</td><td>Invesco</td>
+			</tr>
+			<tr>
+			<td>OIDAX</td><td>Invesco International Diversified Fund</td><td>A</td><td>Invesco</td>
+			</tr>
+			<tr>
+			<td>OIDNX</td><td>Invesco International Diversified Fund</td><td>B</td><td>Invesco</td>
+			</tr>
+			<tr>
+			<td>QIVAX</td><td>Invesco International Equity Fund</td><td>A</td><td>Invesco</td>
+			</tr>
+			<tr>
+			<td>QIVNX</td><td>Invesco International Equity Fund</td><td>B</td><td>Invesco</td>
+			</tr>
+			<tr>
+			<td>OIGAX</td><td>Invesco Oppenheimer International Growth Fund</td><td>A</td><td>Invesco</td>
+			</tr>
+			<tr>
+			<td>OIGNX</td><td>Invesco Oppenheimer International Growth Fund</td><td>B</td><td>Invesco</td>
+			</tr>
+			<tr>
+
+			<td>PMTXX</td><td>Pioneer U.S. Government Money Market Fund</td><td>A</td><td>Amundi Pioneer</td>
+			</tr>
+			<tr>
+			<td>PRXXX</td><td>Pioneer U.S. Government Money Market Fund</td><td>B</td><td>Amundi Pioneer</td>
+			</tr>
+			<tr>
+
+			<td>PIOBX</td><td>Pioneer Bond Fund</td><td>A</td><td>Amundi Pioneer</td>
+			</tr>
+			<tr>
+			<td>PBFRX</td><td>Pioneer Bond Fund</td><td>B</td><td>Amundi Pioneer</td>
+			</tr>
+			<tr>
+			<td>MAFRX</td><td>Pioneer Multi-Asset Ultrashort Income Fund</td><td>A</td><td>Amundi Pioneer</td>
+			</tr>
+			<tr>
+			<td>STABX</td><td>Pioneer Short Term Income Fund</td><td>A</td><td>Amundi Pioneer</td>
+			</tr>
+			<tr>
+			<td>PSRAX</td><td>Pioneer Strategic Income Fund</td><td>A</td><td>Amundi Pioneer</td>
+			</tr>
+			<tr>
+			<td>STIRX</td><td>Pioneer Strategic Income Fund</td><td>B</td><td>Amundi Pioneer</td>
+			</tr>
+			<tr>
+
+			<td>PBMFX</td><td>Pioneer AMT-Free Municipal Fund</td><td>A</td><td>Amundi Pioneer</td>
+			</tr>
+			<tr>
+
+			<td>AOBLX</td><td>Pioneer Balanced ESG Fund</td><td>A</td><td>Amundi Pioneer</td>
+			</tr>
+			<tr>
+			<td>CBPRX</td><td>Pioneer Balanced ESG Fund</td><td>B</td><td>Amundi Pioneer</td>
+			</tr>
+			<tr>
+			<td>PMAIX</td><td>Pioneer Multi Asset Income Fund</td><td>A</td><td>Amundi Pioneer</td>
+			</tr>
+			<tr>
+			<td>PMFRX</td><td>Pioneer Multi Asset Income Fund</td><td>B</td><td>Amundi Pioneer</td>
+			</tr>
+			<tr>
+
+			<td>PIOTX</td><td>Pioneer Core Equity Fund</td><td>A</td><td>Amundi Pioneer</td>
+			</tr>
+			<tr>
+			<td>CERPX</td><td>Pioneer Core Equity Fund</td><td>A</td><td>Amundi Pioneer</td>
+			</tr>
+			<tr>
+			<td>PINDX</td><td>Pioneer Disciplined Growth Fund</td><td>A</td><td>Amundi Pioneer</td>
+			</tr>
+			<tr>
+			<td>CVFCX</td><td>Pioneer Disciplined Value Fund</td><td>A</td><td>Amundi Pioneer</td>
+			</tr>
+			<tr>
+			<td>CVRFX</td><td>Pioneer Disciplined Value Fund</td><td>B</td><td>Amundi Pioneer</td>
+			</tr>
+			<tr>
+			<td>PEQIX</td><td>Pioneer Equity Income Fund</td><td>A</td><td>Amundi Pioneer</td>
+			</tr>
+			<tr>
+			<td>PQIRX</td><td>Pioneer Equity Income Fund</td><td>B</td><td>Amundi Pioneer</td>
+			</tr>
+			<tr>
+			<td>PIODX</td><td>Pioneer Fund</td><td>A</td><td>Amundi Pioneer</td>
+			</tr>
+			<tr>
+			<td>PIORX</td><td>Pioneer Fund</td><td>B</td><td>Amundi Pioneer</td>
+			</tr>
+			<tr>
+			<td>PIGFX</td><td>Pioneer Fundamental Growth Fund</td><td>A</td><td>Amundi Pioneer</td>
+			</tr>
+			<tr>
+			<td>PFGRX</td><td>Pioneer Fundamental Growth Fund</td><td>B</td><td>Amundi Pioneer</td>
+			</tr>
+			<tr>
+			<td>PIALX</td><td>Pioneer Solutions-Balanced Fund</td><td>A</td><td>Amundi Pioneer</td>
+			</tr>
+			<tr>
+			<td>BALRX</td><td>Pioneer Solutions-Balanced Fund</td><td>B</td><td>Amundi Pioneer</td>
+			</tr>
+			<tr>
+
+			<td>RCRAX</td><td>Pioneer Corporate High Yield Fund</td><td>A</td><td>Amundi Pioneer</td>
+			</tr>
+			<tr>
+			<td>FLARX</td><td>Pioneer Floating Rate Fund</td><td>A</td><td>Amundi Pioneer</td>
+			</tr>
+			<tr>
+			<td>PIMAX</td><td>Pioneer High Income Municipal Fund*</td><td>A</td><td>Amundi Pioneer</td>
+			</tr>
+			<tr>
+			<td>TAHYX</td><td>Pioneer High Yield Fund</td><td>A</td><td>Amundi Pioneer</td>
+			</tr>
+			<tr>
+			<td>TYHRX</td><td>Pioneer High Yield Fund</td><td>B</td><td>Amundi Pioneer</td>
+			</tr>
+			<tr>
+
+			<td>GLOSX</td><td>Pioneer Global Equity Fund</td><td>A</td><td>Amundi Pioneer</td>
+			</tr>
+			<tr>
+			<td>PRGEX</td><td>Pioneer Global Equity Fund</td><td>B</td><td>Amundi Pioneer</td>
+			</tr>
+			<tr>
+			<td>PCGRX</td><td>Pioneer Mid Cap Value Fund</td><td>A</td><td>Amundi Pioneer</td>
+			</tr>
+			<tr>
+			<td>PCMRX</td><td>Pioneer Mid Cap Value Fund</td><td>B</td><td>Amundi Pioneer</td>
+			</tr>
+			<tr>
+			<td>PMARX</td><td>Pioneer Flexible Opportunities Fund</td><td>A</td><td>Amundi Pioneer</td>
+			</tr>
+			<tr>
+			<td>MUARX</td><td>Pioneer Flexible Opportunities Fund</td><td>B</td><td>Amundi Pioneer</td>
+			</tr>
+			<tr>
+			<td>PGOFX</td><td>Pioneer Select Mid Cap Growth Fund</td><td>A</td><td>Amundi Pioneer</td>
+			</tr>
+			<tr>
+			<td>PGRRX</td><td>Pioneer Select Mid Cap Growth Fund</td><td>B</td><td>Amundi Pioneer</td>
+			</tr>
+			<tr>
+
+			<td>PWREX</td><td>Pioneer Real Estate Fund</td><td>A</td><td>Amundi Pioneer</td>
+			</tr>
+			<tr>
+
+			<td>PIIFX</td><td>Pioneer International Equity Fund</td><td>A</td><td>Amundi Pioneer</td>
+			</tr>
+			<tr>
+
+			<td>AGQXX</td><td>American Century US Govt Money Market</td><td>A</td><td>American Century</td>
+			</tr>
+			<tr>
+
+			<td>ACCQX</td><td>American Century Core Plus</td><td>A</td><td>American Century</td>
+			</tr>
+			<tr>
+			<td>ADFAX</td><td>American Century Diversified Bond</td><td>A</td><td>American Century</td>
+			</tr>
+			<tr>
+			<td>BGNAX</td><td>American Century Ginnie Mae</td><td>A</td><td>American Century</td>
+			</tr>
+			<tr>
+			<td>ABTAX</td><td>American Century Government Bond</td><td>A</td><td>American Century</td>
+			</tr>
+			<tr>
+			<td>AIAVX</td><td>American Century Inflation Adjusted Bond</td><td>A</td><td>American Century</td>
+			</tr>
+			<tr>
+			<td>AIBDX</td><td>American Century International Bond</td><td>A</td><td>American Century</td>
+			</tr>
+			<tr>
+			<td>ACSQX</td><td>American Century Short Duration</td><td>A</td><td>American Century</td>
+			</tr>
+			<tr>
+			<td>APOAX</td><td>American Century Short Duration Inflation Protection Bond</td><td>A</td><td>American Century</td>
+			</tr>
+			<tr>
+			<td>TWAVX</td><td>American Century Short Term Government</td><td>A</td><td>American Century</td>
+			</tr>
+			<tr>
+
+			<td>BCIAX</td><td>American Century California Intermediate Term Tax-Free Bond</td><td>A</td><td>American Century</td>
+			</tr>
+			<tr>
+			<td>TWWOX</td><td>American Century Intermediate Term Tax-Free Bond</td><td>A</td><td>American Century</td>
+			</tr>
+			<tr>
+
+			<td>ARWAX</td><td>American Century One Choice 2025</td><td>A</td><td>American Century</td>
+			</tr>
+			<tr>
+			<td>ARCMX</td><td>American Century One Choice 2030</td><td>A</td><td>American Century</td>
+			</tr>
+			<tr>
+			<td>ARYAX</td><td>American Century One Choice 2035</td><td>A</td><td>American Century</td>
+			</tr>
+			<tr>
+			<td>ARDMX</td><td>American Century One Choice 2040</td><td>A</td><td>American Century</td>
+			</tr>
+			<tr>
+			<td>ARTAX</td><td>American Century One Choice In Retirement Portfolio</td><td>A</td><td>American Century</td>
+			</tr>
+			<tr>
+			<td>ACCAX</td><td>American Century Strategic Allocation Conservative</td><td>A</td><td>American Century</td>
+			</tr>
+			<tr>
+			<td>ACOAX</td><td>American Century Strategic Allocation Moderate</td><td>A</td><td>American Century</td>
+			</tr>
+			<tr>
+
+			<td>ADCVX</td><td>American Century Disciplined Growth</td><td>A</td><td>American Century</td>
+			</tr>
+			<tr>
+			<td>BEQAX</td><td>American Century Equity Growth</td><td>A</td><td>American Century</td>
+			</tr>
+			<tr>
+			<td>TWEAX</td><td>American Century Equity Income</td><td>A</td><td>American Century</td>
+			</tr>
+			<tr>
+			<td>AGGRX</td><td>American Century Focused Global Growth</td><td>A</td><td>American Century</td>
+			</tr>
+			<tr>
+			<td>TCRAX</td><td>American Century Growth</td><td>A</td><td>American Century</td>
+			</tr>
+			<tr>
+			<td>AMADX</td><td>American Century Disciplined Core Value Fund</td><td>A</td><td>American Century</td>
+			</tr>
+			<tr>
+			<td>ALPAX</td><td>American Century Large Company Value A</td><td>A</td><td>American Century</td>
+			</tr>
+			<tr>
+			<td>AROAX</td><td>American Century One Choice 2045</td><td>A</td><td>American Century</td>
+			</tr>
+			<tr>
+			<td>ARFMX</td><td>American Century One Choice 2050</td><td>A</td><td>American Century</td>
+			</tr>
+			<tr>
+			<td>AREMX</td><td>American Century One Choice 2055</td><td>A</td><td>American Century</td>
+			</tr>
+			<tr>
+			<td>ARGMX</td><td>American Century One Choice 2060</td><td>A</td><td>American Century</td>
+			</tr>
+			<tr>
+			<td>TWCAX</td><td>American Century Select</td><td>A</td><td>American Century</td>
+			</tr>
+			<tr>
+			<td>ACVAX</td><td>American Century Strategic Allocation Aggressive</td><td>A</td><td>American Century</td>
+			</tr>
+			<tr>
+			<td>AFDAX</td><td>American Century Sustainable Equity</td><td>A</td><td>American Century</td>
+			</tr>
+			<tr>
+			<td>TWUAX</td><td>American Century Ultra</td><td>A</td><td>American Century</td>
+			</tr>
+			<tr>
+			<td>TWADX</td><td>American Century Value</td><td>A</td><td>American Century</td>
+			</tr>
+			<tr>
+
+			<td>CAYAX</td><td>American Century California High Yield Municipal</td><td>A</td><td>American Century</td>
+			</tr>
+			<tr>
+			<td>AHYVX</td><td>American Century High-Yield</td><td>A</td><td>American Century</td>
+			</tr>
+			<tr>
+			<td>AYMAX</td><td>American Century High-Yield Muni*</td><td>A</td><td>American Century</td>
+			</tr>
+			<tr>
+
+			<td>ATHAX</td><td>American Century Heritage</td><td>A</td><td>American Century</td>
+			</tr>
+			<tr>
+			<td>ANOAX</td><td>American Century Small Cap Growth</td><td>A</td><td>American Century</td>
+			</tr>
+			<tr>
+			<td>ASQAX</td><td>American Century Small Company</td><td>A</td><td>American Century</td>
+			</tr>
+			<tr>
+
+			<td>ACGGX</td><td>American Century Global Gold</td><td>A</td><td>American Century</td>
+			</tr>
+			<tr>
+			<td>AREEX</td><td>American Century Real Estate</td><td>A</td><td>American Century</td>
+			</tr>
+			<tr>
+
+			<td>AEMMX</td><td>American Century Emerging Markets</td><td>A</td><td>American Century</td>
+			</tr>
+			<tr>
+			<td>TWGAX</td><td>American Century International Growth</td><td>A</td><td>American Century</td>
+			</tr>
+			<tr>
+			<td>AIVOX</td><td>American Century International Opportunities</td><td>A</td><td>American Century</td>
+			</tr>
+			<tr>
+
+			<td>FMFXX</td><td>Franklin U.S. Government Money Fund</td><td>A</td><td>Franklin Templeton</td>
+			</tr>
+			<tr>
+
+			<td>FISAX</td><td>Franklin Adjustable U.S. Government Securities Fund</td><td>A</td><td>Franklin Templeton</td>
+			</tr>
+			<tr>
+			<td>FAFRX</td><td>Franklin Floating Rate Daily Access Fund</td><td>A</td><td>Franklin Templeton</td>
+			</tr>
+			<tr>
+			<td>FLDAX</td><td>Franklin Low Duration Total Return A</td><td>A</td><td>Franklin Templeton</td>
+			</tr>
+			<tr>
+			<td>FRSTX</td><td>Franklin Strategic Income Fund</td><td>A</td><td>Franklin Templeton</td>
+			</tr>
+			<tr>
+			<td>FKBAX</td><td>Franklin Total Return Fund</td><td>A</td><td>Franklin Templeton</td>
+			</tr>
+			<tr>
+			<td>FKFSX</td><td>Franklin U.S. Government Securities Fund</td><td>A</td><td>Franklin Templeton</td>
+			</tr>
+			<tr>
+
+			<td>FALQX</td><td>Franklin Alabama Tax-Free Income Fund</td><td>A</td><td>Franklin Templeton</td>
+			</tr>
+			<tr>
+			<td>FAZQX</td><td>Franklin Arizona Tax-Free Income Fund</td><td>A</td><td>Franklin Templeton</td>
+			</tr>
+			<tr>
+			<td>FCQAX</td><td>Franklin California High Yield Municipal Fund</td><td>A</td><td>Franklin Templeton</td>
+			</tr>
+			<tr>
+			<td>FCCQX</td><td>Franklin California Intermediate-Term Tax-Free Inc. Fund</td><td>A</td><td>Franklin Templeton</td>
+			</tr>
+			<tr>
+			<td>FTFQX</td><td>Franklin California Tax-Free Income Fund</td><td>A</td><td>Franklin Templeton</td>
+			</tr>
+			<tr>
+			<td>FCOQX</td><td>Franklin Colorado Tax-Free Income Fund</td><td>A</td><td>Franklin Templeton</td>
+			</tr>
+			<tr>
+			<td>FQCTX</td><td>Franklin Connecticut Tax-Free Income Fund</td><td>A</td><td>Franklin Templeton</td>
+			</tr>
+			<tr>
+			<td>FKQTX</td><td>Franklin Federal Intermediate-Term Tax Free Inc. Fund</td><td>A</td><td>Franklin Templeton</td>
+			</tr>
+			<tr>
+			<td>FFLQX</td><td>Franklin Federal Limited-Term Tax-Free Income Fund</td><td>A</td><td>Franklin Templeton</td>
+			</tr>
+			<tr>
+			<td>FFQAX</td><td>Franklin Federal Tax-Free Income Fund</td><td>A</td><td>Franklin Templeton</td>
+			</tr>
+			<tr>
+			<td>FQFLX</td><td>Franklin Florida Tax-Free Income Fund</td><td>A</td><td>Franklin Templeton</td>
+			</tr>
+			<tr>
+			<td>FGAQX</td><td>Franklin Georgia Tax-Free Income Fund</td><td>A</td><td>Franklin Templeton</td>
+			</tr>
+			<tr>
+			<td>FRKQX</td><td>Franklin Kentucky Tax-Free Income Fund</td><td>A</td><td>Franklin Templeton</td>
+			</tr>
+			<tr>
+			<td>FQLAX</td><td>Franklin Louisiana Tax-Free Income Fund</td><td>A</td><td>Franklin Templeton</td>
+			</tr>
+			<tr>
+			<td>FQMDX</td><td>Franklin Maryland Tax-Free Income Fund</td><td>A</td><td>Franklin Templeton</td>
+			</tr>
+			<tr>
+			<td>FMAQX</td><td>Franklin Massachusetts Tax-Free Income Fund</td><td>A</td><td>Franklin Templeton</td>
+			</tr>
+			<tr>
+			<td>FMQTX</td><td>Franklin Michigan Tax-Free Income Fund</td><td>A</td><td>Franklin Templeton</td>
+			</tr>
+			<tr>
+			<td>FMNQX</td><td>Franklin Minnesota Tax-Free Income Fund</td><td>A</td><td>Franklin Templeton</td>
+			</tr>
+			<tr>
+			<td>FMQOX</td><td>Franklin Missouri Tax-Free Income Fund</td><td>A</td><td>Franklin Templeton</td>
+			</tr>
+			<tr>
+			<td>FNJQX</td><td>Franklin New Jersey Tax-Free Income Fund</td><td>A</td><td>Franklin Templeton</td>
+			</tr>
+			<tr>
+			<td>FKNQX</td><td>Franklin New York Intermediate-Term Tax-Free Income Fund</td><td>A</td><td>Franklin Templeton</td>
+			</tr>
+			<tr>
+			<td>FNYQX</td><td>Franklin New York Tax-Free Income Fund</td><td>A</td><td>Franklin Templeton</td>
+			</tr>
+			<tr>
+			<td>FQNCX</td><td>Franklin North Carolina Tax-Free Income Fund</td><td>A</td><td>Franklin Templeton</td>
+			</tr>
+			<tr>
+			<td>FOHQX</td><td>Franklin Ohio Tax-Free Income Fund</td><td>A</td><td>Franklin Templeton</td>
+			</tr>
+			<tr>
+			<td>FOFQX</td><td>Franklin Oregon Tax-Free Income Fund</td><td>A</td><td>Franklin Templeton</td>
+			</tr>
+			<tr>
+			<td>FPAQX</td><td>Franklin Pennsylvania Tax-Free Income Fund</td><td>A</td><td>Franklin Templeton</td>
+			</tr>
+			<tr>
+			<td>FTQMX</td><td>Franklin Tennessee Municipal Bond Fund</td><td>A</td><td>Franklin Templeton</td>
+			</tr>
+			<tr>
+			<td>FVAQX</td><td>Franklin Virginia Tax-Free Income Fund</td><td>A</td><td>Franklin Templeton</td>
+			</tr>
+			<tr>
+
+			<td>FBLAX</td><td>Franklin Managed Income Fund</td><td>A</td><td>Franklin Templeton</td>
+			</tr>
+			<tr>
+			<td>FTCIX</td><td>Franklin Conservative Allocation Fund</td><td>A</td><td>Franklin Templeton</td>
+			</tr>
+			<tr>
+			<td>FKIQX</td><td>Franklin Income Fund</td><td>A</td><td>Franklin Templeton</td>
+			</tr>
+			<tr>
+			<td>FTRAX</td><td>Franklin LifeSmart Retirement Income Fund</td><td>A</td><td>Franklin Templeton</td>
+			</tr>
+			<tr>
+			<td>FMTIX</td><td>Franklin Moderate Allocation Fund</td><td>A</td><td>Franklin Templeton</td>
+			</tr>
+			<tr>
+
+			<td>FTCOX</td><td>Franklin Corefolio Allocation Fund</td><td>A</td><td>Franklin Templeton</td>
+			</tr>
+			<tr>
+			<td>FKDNX</td><td>Franklin DynaTech Fund</td><td>A</td><td>Franklin Templeton</td>
+			</tr>
+			<tr>
+			<td>FISEX</td><td>Franklin Equity Income Fund</td><td>A</td><td>Franklin Templeton</td>
+			</tr>
+			<tr>
+			<td>FFALX</td><td>Franklin Founding Funds Allocation Fund</td><td>A</td><td>Franklin Templeton</td>
+			</tr>
+			<tr>
+			<td>FGTIX</td><td>Franklin Growth Allocation Fund</td><td>A</td><td>Franklin Templeton</td>
+			</tr>
+			<tr>
+			<td>FKGRX</td><td>Franklin Growth Fund</td><td>A</td><td>Franklin Templeton</td>
+			</tr>
+			<tr>
+			<td>FGRAX</td><td>Franklin Growth Opportunities Fund</td><td>A</td><td>Franklin Templeton</td>
+			</tr>
+			<tr>
+			<td>FTRTX</td><td>Franklin LifeSmart 2025 Retirement Target Fund</td><td>A</td><td>Franklin Templeton</td>
+			</tr>
+			<tr>
+			<td>FRTAX</td><td>Franklin LifeSmart 2035 Retirement Target Fund</td><td>A</td><td>Franklin Templeton</td>
+			</tr>
+			<tr>
+			<td>FTTAX</td><td>Franklin LifeSmart 2045 Retirement Target Fund</td><td>A</td><td>Franklin Templeton</td>
+			</tr>
+			<tr>
+			<td>TEBIX</td><td>Franklin Mutual Beacon Fund</td><td>A</td><td>Franklin Templeton</td>
+			</tr>
+			<tr>
+			<td>TEDIX</td><td>Franklin Mutual Global Discovery Fund</td><td>A</td><td>Franklin Templeton</td>
+			</tr>
+			<tr>
+			<td>TESIX</td><td>Franklin Mutual Shares Fund</td><td>A</td><td>Franklin Templeton</td>
+			</tr>
+			<tr>
+			<td>FRDPX</td><td>Franklin Rising Dividends Fund</td><td>A</td><td>Franklin Templeton</td>
+			</tr>
+			<tr>
+			<td>TAGBX</td><td>Templeton Global Balanced Fund</td><td>A</td><td>Franklin Templeton</td>
+			</tr>
+			<tr>
+
+			<td>FHQRX</td><td>Franklin High Income Fund</td><td>A</td><td>Franklin Templeton</td>
+			</tr>
+			<tr>
+			<td>FHYQX</td><td>Franklin High Yield Tax-Free Income Fund*</td><td>A</td><td>Franklin Templeton</td>
+			</tr>
+			<tr>
+			<td>TBOAX</td><td>Templeton International Bond Fund</td><td>A</td><td>Franklin Templeton</td>
+			</tr>
+			<tr>
+			<td>TPINX</td><td>Templeton Global Bond Fund</td><td>A</td><td>Franklin Templeton</td>
+			</tr>
+			<tr>
+			<td>TGTRX</td><td>Templeton Global Total Return Fund</td><td>A</td><td>Franklin Templeton</td>
+			</tr>
+			<tr>
+
+			<td>FRMCX</td><td>Franklin MicroCap Value Fund</td><td>A</td><td>Franklin Templeton</td>
+			</tr>
+			<tr>
+			<td>TEQIX</td><td>Franklin Mutual Quest Fund</td><td>A</td><td>Franklin Templeton</td>
+			</tr>
+			<tr>
+			<td>FSGRX</td><td>Franklin Small Cap Growth Fund</td><td>A</td><td>Franklin Templeton</td>
+			</tr>
+			<tr>
+			<td>FRVLX</td><td>Franklin Small Cap Value Fund</td><td>A</td><td>Franklin Templeton</td>
+			</tr>
+			<tr>
+			<td>FRSGX</td><td>Franklin Small-Mid Cap Growth Fund</td><td>A</td><td>Franklin Templeton</td>
+			</tr>
+			<tr>
+			<td>FRBSX</td><td>Franklin Mutual U.S. Value Fund</td><td>A</td><td>Franklin Templeton</td>
+			</tr>
+			<tr>
+			<td>TEMGX</td><td>Templeton Global Smaller Companies Fund</td><td>A</td><td>Franklin Templeton</td>
+			</tr>
+			<tr>
+			<td>TEPLX</td><td>Templeton Growth Fund</td><td>A</td><td>Franklin Templeton</td>
+			</tr>
+			<tr>
+			<td>TEMWX</td><td>Templeton World Fund</td><td>A</td><td>Franklin Templeton</td>
+			</tr>
+			<tr>
+
+			<td>FBDIX</td><td>Franklin Biotechnology Discovery Fund</td><td>A</td><td>Franklin Templeton</td>
+			</tr>
+			<tr>
+			<td>FKRCX</td><td>Franklin Gold and Precious Metals Fund</td><td>A</td><td>Franklin Templeton</td>
+			</tr>
+			<tr>
+			<td>TFSIX</td><td>Franklin Mutual Financial Services Fund</td><td>A</td><td>Franklin Templeton</td>
+			</tr>
+			<tr>
+			<td>FRNRX</td><td>Franklin Natural Resources Fund</td><td>A</td><td>Franklin Templeton</td>
+			</tr>
+			<tr>
+			<td>FREEX</td><td>Franklin Real Estate Securities Fund</td><td>A</td><td>Franklin Templeton</td>
+			</tr>
+			<tr>
+			<td>FKUQX</td><td>Franklin Utilities Fund</td><td>A</td><td>Franklin Templeton</td>
+			</tr>
+			<tr>
+
+			<td>FNGAX</td><td>Franklin International Growth Fund</td><td>A</td><td>Franklin Templeton</td>
+			</tr>
+			<tr>
+			<td>TEMIX</td><td>Franklin Mutual European Fund</td><td>A</td><td>Franklin Templeton</td>
+			</tr>
+			<tr>
+			<td>TCWAX</td><td>Templeton China World Fund</td><td>A</td><td>Franklin Templeton</td>
+			</tr>
+			<tr>
+			<td>TEDMX</td><td>Templeton Developing Markets</td><td>A</td><td>Franklin Templeton</td>
+			</tr>
+			<tr>
+			<td>TEMMX</td><td>Templeton Emerging Markets Small Cap Fund</td><td>A</td><td>Franklin Templeton</td>
+			</tr>
+			<tr>
+			<td>TEMFX</td><td>Templeton Foreign Fund</td><td>A</td><td>Franklin Templeton</td>
+			</tr>
+			<tr>
+
+			<td>AFAXX</td><td>American Funds U.S. Government Money Market Fund</td><td>A</td><td>American</td>
+			</tr>
+			<tr>
+			<td>AAZXX</td><td>American Funds U.S. Government Money Market Fund</td><td>ABLEAmerica</td><td>American</td>
+			</tr>
+			<tr>
+
+			<td>BFCAX</td><td>American Funds Corporate Bond Fund</td><td>A</td><td>American</td>
+			</tr>
+			<tr>
+			<td>AHITX</td><td>American Funds High-Income Trust®</td><td>A</td><td>American</td>
+			</tr>
+			<tr>
+			<td>BFIAX</td><td>American Funds Inflation Linked Bond Fund</td><td>A</td><td>American</td>
+			</tr>
+			<tr>
+			<td>MIAQX</td><td>American Funds Multi-Sector Income Fund</td><td>A</td><td>American</td>
+			</tr>
+			<tr>
+			<td>PPVAX</td><td>American Funds Preservation Portfolio</td><td>A</td><td>American</td>
+			</tr>
+			<tr>
+			<td>CPPGX</td><td>American Funds Preservation Portfolio</td><td>ABLEAmerica</td><td>American</td>
+			</tr>
+			<tr>
+			<td>ANBAX</td><td>American Funds Strategic Bond Fund</td><td>A</td><td>American</td>
+			</tr>
+			<tr>
+			<td>AIBAX</td><td>Intermediate Bond Fund of America®</td><td>A</td><td>American</td>
+			</tr>
+			<tr>
+			<td>ASBAX</td><td>Short Term Bond Fund of America®</td><td>A</td><td>American</td>
+			</tr>
+			<tr>
+			<td>ABNDX</td><td>The Bond Fund of America®</td><td>A</td><td>American</td>
+			</tr>
+			<tr>
+			<td>AMUSX</td><td>U.S. Government Securities Fund®</td><td>A</td><td>American</td>
+			</tr>
+			<tr>
+
+			<td>ASTEX</td><td>American Funds Short-Term Tax-Exempt Bond Fund®</td><td>A</td><td>American</td>
+			</tr>
+			<tr>
+			<td>NYAAX</td><td>American Funds Tax-Exempt Fund of New York®</td><td>A</td><td>American</td>
+			</tr>
+			<tr>
+			<td>TEPAX</td><td>American Funds Tax-Exempt Preservation Portfolio</td><td>A</td><td>American</td>
+			</tr>
+			<tr>
+			<td>AMHIX</td><td>American High-Income Municipal Bond Fund®</td><td>A</td><td>American</td>
+			</tr>
+			<tr>
+			<td>LTEBX</td><td>Limited Term Tax-Exempt Bond Fund of America®</td><td>A</td><td>American</td>
+			</tr>
+			<tr>
+			<td>AFTEX</td><td>The Tax-Exempt Bond Fund of America®</td><td>A</td><td>American</td>
+			</tr>
+			<tr>
+			<td>TAFTX</td><td>The Tax-Exempt Fund of California®</td><td>A</td><td>American</td>
+			</tr>
+			<tr>
+
+			<td>AAATX</td><td>American Funds 2010 Target Date Retirement Fund</td><td>A</td><td>American</td>
+			</tr>
+			<tr>
+			<td>AABTX</td><td>American Funds 2015 Target Date Retirement Fund</td><td>A</td><td>American</td>
+			</tr>
+			<tr>
+			<td>ABALX</td><td>American Funds American Balanced Fund®</td><td>A</td><td>American</td>
+			</tr>
+			<tr>
+			<td>INPAX</td><td>American Funds Conservative Growth and Income Portfolio</td><td>A</td><td>American</td>
+			</tr>
+			<tr>
+			<td>CIPGX</td><td>American Funds Conservative Growth and Income Portfolio</td><td>ABLEAmerica</td><td>American</td>
+			</tr>
+			<tr>
+			<td>GBLAX</td><td>American Funds Global Balanced Fund</td><td>A</td><td>American</td>
+			</tr>
+			<tr>
+			<td>BLPAX</td><td>American Funds Moderate Growth and Income Portfolio</td><td>A</td><td>American</td>
+			</tr>
+			<tr>
+			<td>CBAGX</td><td>American Funds Moderate Growth and Income Portfolio</td><td>ABLEAmerica</td><td>American</td>
+			</tr>
+			<tr>
+			<td>NDARX</td><td>American Funds Retirement Income Portfolio</td><td>A</td><td>American</td>
+			</tr>
+			<tr>
+			<td>TAIAX</td><td>American Funds Tax-Advantaged Growth and Income Portfolio*</td><td>A</td><td>American</td>
+			</tr>
+			<tr>
+			<td>NAARX</td><td>Retirement Income Portfolio Conservative A</td><td>A</td><td>American</td>
+			</tr>
+			<tr>
+			<td>NBARX</td><td>Retirement Income Portfolio Moderate A</td><td>A</td><td>American</td>
+			</tr>
+			<tr>
+			<td>AMECX</td><td>The Income Fund of America®</td><td>A</td><td>American</td>
+			</tr>
+			<tr>
+
+			<td>AMCPX</td><td>AMCAP Fund®</td><td>A</td><td>American</td>
+			</tr>
+			<tr>
+			<td>AACTX</td><td>American Funds 2020 Target Date Retirement Fund</td><td>A</td><td>American</td>
+			</tr>
+			<tr>
+			<td>AADTX</td><td>American Funds 2025 Target Date Retirement Fund</td><td>A</td><td>American</td>
+			</tr>
+			<tr>
+			<td>AAETX</td><td>American Funds 2030 Target Date Retirement Fund</td><td>A</td><td>American</td>
+			</tr>
+			<tr>
+			<td>AAFTX</td><td>American Funds 2035 Target Date Retirement Fund</td><td>A</td><td>American</td>
+			</tr>
+			<tr>
+			<td>AAGTX</td><td>American Funds 2040 Target Date Retirement Fund</td><td>A</td><td>American</td>
+			</tr>
+			<tr>
+			<td>AAHTX</td><td>American Funds 2045 Target Date Retirement Fund</td><td>A</td><td>American</td>
+			</tr>
+			<tr>
+			<td>AALTX</td><td>American Funds 2050 Target Date Retirement Fund</td><td>A</td><td>American</td>
+			</tr>
+			<tr>
+			<td>AAMTX</td><td>American Funds 2055 Target Date Retirement Fund</td><td>A</td><td>American</td>
+			</tr>
+			<tr>
+			<td>AANTX</td><td>American Funds 2060 Target Date Retirement Fund</td><td>A</td><td>American</td>
+			</tr>
+			<tr>
+			<td>AGVFX</td><td>American Funds Global Insight Fund</td><td>A</td><td>American</td>
+			</tr>
+			<tr>
+			<td>AMRMX</td><td>American Mutual Fund®</td><td>A</td><td>American</td>
+			</tr>
+			<tr>
+			<td>CAIBX</td><td>Capital Income Builder®</td><td>A</td><td>American</td>
+			</tr>
+			<tr>
+			<td>ANCFX</td><td>Fundamental Investors®</td><td>A</td><td>American</td>
+			</tr>
+			<tr>
+			<td>GAIOX</td><td>Growth and Income Portfolio</td><td>A</td><td>American</td>
+			</tr>
+			<tr>
+			<td>CGNGX</td><td>Growth and Income Portfolio</td><td>ABLEAmerica</td><td>American</td>
+			</tr>
+			<tr>
+			<td>AGTHX</td><td>The Growth Fund of America®</td><td>A</td><td>American</td>
+			</tr>
+			<tr>
+			<td>AIVSX</td><td>The Investment Company of America®</td><td>A</td><td>American</td>
+			</tr>
+			<tr>
+			<td>AWSHX</td><td>Washington Mutual Investors Fund®</td><td>A</td><td>American</td>
+			</tr>
+			<tr>
+
+			<td>CWBFX</td><td>Capital World Bond Fund®</td><td>A</td><td>American</td>
+			</tr>
+			<tr>
+
+			<td>PGGAX</td><td>American Funds Global Growth Portfolio</td><td>A</td><td>American</td>
+			</tr>
+			<tr>
+			<td>CGGGX</td><td>American Funds Global Growth Portfolio</td><td>ABLEAmerica</td><td>American</td>
+			</tr>
+			<tr>
+			<td>GWPAX</td><td>American Funds Growth Portfolio</td><td>A</td><td>American</td>
+			</tr>
+			<tr>
+			<td>CGQGX</td><td>American Funds Growth Portfolio</td><td>ABLEAmerica</td><td>American</td>
+			</tr>
+			<tr>
+			<td>ANWPX</td><td>American New Perspective Fund®</td><td>A</td><td>American</td>
+			</tr>
+			<tr>
+			<td>CWGIX</td><td>Capital World Growth and Income Fund®</td><td>A</td><td>American</td>
+			</tr>
+			<tr>
+
+			<td>MFAAX</td><td>American Funds Mortgage Fund®</td><td>A</td><td>American</td>
+			</tr>
+			<tr>
+
+			<td>DWGAX</td><td>American Funds Developing World Growth & Income Fund</td><td>A</td><td>American</td>
+			</tr>
+			<tr>
+			<td>AIVBX</td><td>American Funds International Vantage Fund</td><td>A</td><td>American</td>
+			</tr>
+			<tr>
+			<td>AEPGX</td><td>EuroPacific Growth Fund®</td><td>A</td><td>American</td>
+			</tr>
+			<tr>
+			<td>IGAAX</td><td>International Growth & Income Fund</td><td>A</td><td>American</td>
+			</tr>
+			<tr>
+			<td>NEWFX</td><td>New World Fund®</td><td>A</td><td>American</td>
+			</tr>
+			<tr>
+			<td>SMCWX</td><td>SMALLCAP World Fund®</td><td>A</td><td>American</td>
+			</tr>
+			<tr>
+			<td>ANEFX</td><td>The New Economy Fund®</td><td>A</td><td>American</td>
+			</tr>
+			<tr>
+
+			<td>FZBXX</td><td>Fidelity Govt. Money Market Fund Daily</td><td>A</td><td>Fidelity Advisor</td>
+			</tr>
+			<tr>
+
+			<td>FCBAX</td><td>Fidelity Advisor Corporate Bond Fund</td><td>A</td><td>Fidelity Advisor</td>
+			</tr>
+			<tr>
+			<td>FVIAX</td><td>Fidelity Advisor Government Income Fund</td><td>A</td><td>Fidelity Advisor</td>
+			</tr>
+			<tr>
+			<td>FGBAX</td><td>Fidelity Advisor Investment Grade Bond Fund</td><td>A</td><td>Fidelity Advisor</td>
+			</tr>
+			<tr>
+			<td>FDIAX</td><td>Fidelity Advisor Limited Term Bond Fund</td><td>A</td><td>Fidelity Advisor</td>
+			</tr>
+			<tr>
+			<td>FHUGX</td><td>Fidelity Advisor Municipal Income Fund</td><td>A</td><td>Fidelity Advisor</td>
+			</tr>
+			<tr>
+			<td>FMGAX</td><td>Fidelity Advisor Mortgage Securities Fund</td><td>A</td><td>Fidelity Advisor</td>
+			</tr>
+			<tr>
+			<td>FEPAX</td><td>Fidelity Advisor Total Bond Fund</td><td>A</td><td>Fidelity Advisor</td>
+			</tr>
+			<tr>
+
+			<td>FCMAX</td><td>Fidelity Advisor California Municipal Income Fund</td><td>A</td><td>Fidelity Advisor</td>
+			</tr>
+			<tr>
+			<td>FZIAX</td><td>Fidelity Advisor Intermediate Municipal Income Fund</td><td>A</td><td>Fidelity Advisor</td>
+			</tr>
+			<tr>
+			<td>FASHX</td><td>Fidelity Advisor Limited Term Municipal Income Fund</td><td>A</td><td>Fidelity Advisor</td>
+			</tr>
+			<tr>
+			<td>FNMAX</td><td>Fidelity Advisor New York Municipal Income Fund</td><td>A</td><td>Fidelity Advisor</td>
+			</tr>
+			<tr>
+
+			<td>FABLX</td><td>Fidelity Advisor Balanced Fund</td><td>A</td><td>Fidelity Advisor</td>
+			</tr>
+			<tr>
+			<td>FACFX</td><td>Fidelity Advisor Freedom 2010</td><td>A</td><td>Fidelity Advisor</td>
+			</tr>
+			<tr>
+			<td>FFVAX</td><td>Fidelity Advisor Freedom 2015</td><td>A</td><td>Fidelity Advisor</td>
+			</tr>
+			<tr>
+
+			<td>FAASX</td><td>Fidelity Advisor Asset Manager 70%</td><td>A</td><td>Fidelity Advisor</td>
+			</tr>
+			<tr>
+			<td>FDTOX</td><td>Fidelity Advisor Diversified Stock Fund</td><td>A</td><td>Fidelity Advisor</td>
+			</tr>
+			<tr>
+			<td>FADAX</td><td>Fidelity Advisor Dividend Growth Fund</td><td>A</td><td>Fidelity Advisor</td>
+			</tr>
+			<tr>
+			<td>EPGAX</td><td>Fidelity Advisor Equity Growth Fund</td><td>A</td><td>Fidelity Advisor</td>
+			</tr>
+			<tr>
+			<td>FEIAX</td><td>Fidelity Advisor Equity Income Fund</td><td>A</td><td>Fidelity Advisor</td>
+			</tr>
+			<tr>
+			<td>FAVAX</td><td>Fidelity Advisor Equity Value Fund</td><td>A</td><td>Fidelity Advisor</td>
+			</tr>
+			<tr>
+			<td>FDAFX</td><td>Fidelity Advisor Freedom 2020</td><td>A</td><td>Fidelity Advisor</td>
+			</tr>
+			<tr>
+			<td>FATWX</td><td>Fidelity Advisor Freedom 2025</td><td>A</td><td>Fidelity Advisor</td>
+			</tr>
+			<tr>
+			<td>FAFEX</td><td>Fidelity Advisor Freedom 2030</td><td>A</td><td>Fidelity Advisor</td>
+			</tr>
+			<tr>
+			<td>FATHX</td><td>Fidelity Advisor Freedom 2035</td><td>A</td><td>Fidelity Advisor</td>
+			</tr>
+			<tr>
+			<td>FAFFX</td><td>Fidelity Advisor Freedom 2040</td><td>A</td><td>Fidelity Advisor</td>
+			</tr>
+			<tr>
+			<td>FGIRX</td><td>Fidelity Advisor Growth & Income</td><td>A</td><td>Fidelity Advisor</td>
+			</tr>
+			<tr>
+			<td>FALAX</td><td>Fidelity Advisor Large Cap Fund</td><td>A</td><td>Fidelity Advisor</td>
+			</tr>
+			<tr>
+			<td>FNIAX</td><td>Fidelity Advisor New Insights Fund</td><td>A</td><td>Fidelity Advisor</td>
+			</tr>
+			<tr>
+			<td>FMAMX</td><td>Fidelity Advisor Stock Selector All Cap</td><td>A</td><td>Fidelity Advisor</td>
+			</tr>
+			<tr>
+			<td>FASDX</td><td>Fidelity Advisor Strategic Dividend & Income Fund</td><td>A</td><td>Fidelity Advisor</td>
+			</tr>
+			<tr>
+			<td>FSOAX</td><td>Fidelity Advisor Value Strategies Fund</td><td>A</td><td>Fidelity Advisor</td>
+			</tr>
+			<tr>
+			<td>FFRAX</td><td>Fidelity Advisor Floating Rate High Income Fund</td><td>A</td><td>Fidelity Advisor</td>
+			</tr>
+			<tr>
+			<td>FAHDX</td><td>Fidelity Advisor High Income Advantage Fund</td><td>A</td><td>Fidelity Advisor</td>
+			</tr>
+			<tr>
+			<td>FSTAX</td><td>Fidelity Advisor Strategic Income Fund</td><td>A</td><td>Fidelity Advisor</td>
+			</tr>
+			<tr>
+
+			<td>FFFZX</td><td>Fidelity Advisor Freedom 2045 Fund</td><td>A</td><td>Fidelity Advisor</td>
+			</tr>
+			<tr>
+			<td>FFFLX</td><td>Fidelity Advisor Freedom 2050 Fund</td><td>A</td><td>Fidelity Advisor</td>
+			</tr>
+			<tr>
+			<td>FGEAX</td><td>Fidelity Advisor Global Capital Appreciation Fund</td><td>A</td><td>Fidelity Advisor</td>
+			</tr>
+			<tr>
+			<td>FAGAX</td><td>Fidelity Advisor Growth Opportunities</td><td>A</td><td>Fidelity Advisor</td>
+			</tr>
+			<tr>
+			<td>FIASX</td><td>Fidelity Advisor International Small Cap Fund</td><td>A</td><td>Fidelity Advisor</td>
+			</tr>
+			<tr>
+			<td>FLSAX</td><td>Fidelity Advisor Leveraged Company Stock Fund</td><td>A</td><td>Fidelity Advisor</td>
+			</tr>
+			<tr>
+			<td>FIIAX</td><td>Fidelity Advisor Mid Cap II Fund</td><td>A</td><td>Fidelity Advisor</td>
+			</tr>
+			<tr>
+			<td>FMPAX</td><td>Fidelity Advisor Mid Cap Value Fund</td><td>A</td><td>Fidelity Advisor</td>
+			</tr>
+			<tr>
+			<td>FSCDX</td><td>Fidelity Advisor Small Cap Fund</td><td>A</td><td>Fidelity Advisor</td>
+			</tr>
+			<tr>
+			<td>FMCDX</td><td>Fidelity Advisor Stock Sector Mid Cap Fund</td><td>A</td><td>Fidelity Advisor</td>
+			</tr>
+			<tr>
+			<td>FAVFX</td><td>Fidelity Advisor Value Fund</td><td>A</td><td>Fidelity Advisor</td>
+			</tr>
+			<tr>
+			<td>FWAFX</td><td>Fidelity Advisor Worldwide Fund</td><td>A</td><td>Fidelity Advisor</td>
+			</tr>
+			<tr>
+
+			<td>FBTAX</td><td>Fidelity Advisor Biotechnology Fund</td><td>A</td><td>Fidelity Advisor</td>
+			</tr>
+			<tr>
+			<td>FDAGX</td><td>Fidelity Advisor Consumer Staples Fund</td><td>A</td><td>Fidelity Advisor</td>
+			</tr>
+			<tr>
+			<td>FELAX</td><td>Fidelity Advisor Semiconductors Fund</td><td>A</td><td>Fidelity Advisor</td>
+			</tr>
+			<tr>
+			<td>FANAX</td><td>Fidelity Advisor Energy Fund</td><td>A</td><td>Fidelity Advisor</td>
+			</tr>
+			<tr>
+			<td>FAFDX</td><td>Fidelity Advisor Financial Services Fund</td><td>A</td><td>Fidelity Advisor</td>
+			</tr>
+			<tr>
+			<td>FGDAX</td><td>Fidelity Advisor Gold Fund</td><td>A</td><td>Fidelity Advisor</td>
+			</tr>
+			<tr>
+			<td>FACDX</td><td>Fidelity Advisor Health Care Fund</td><td>A</td><td>Fidelity Advisor</td>
+			</tr>
+			<tr>
+			<td>FIRAX</td><td>Fidelity Advisor International Real Estate Fund</td><td>A</td><td>Fidelity Advisor</td>
+			</tr>
+			<tr>
+			<td>FMFAX</td><td>Fidelity Advisor Materials Fund</td><td>A</td><td>Fidelity Advisor</td>
+			</tr>
+			<tr>
+			<td>FHEAX</td><td>Fidelity Advisor Real Estate Fund</td><td>A</td><td>Fidelity Advisor</td>
+			</tr>
+			<tr>
+			<td>FRINX</td><td>Fidelity Advisor Real Estate Income Fund</td><td>A</td><td>Fidelity Advisor</td>
+			</tr>
+			<tr>
+			<td>FADTX</td><td>Fidelity Advisor Technology Fund</td><td>A</td><td>Fidelity Advisor</td>
+			</tr>
+			<tr>
+			<td>FUGAX</td><td>Fidelity Advisor Utilities Fund</td><td>A</td><td>Fidelity Advisor</td>
+			</tr>
+			<tr>
+
+			<td>FACNX</td><td>Fidelity Advisor Canada Fund</td><td>A</td><td>Fidelity Advisor</td>
+			</tr>
+			<tr>
+			<td>FDVAX</td><td>Fidelity Advisor Diversified International Fund</td><td>A</td><td>Fidelity Advisor</td>
+			</tr>
+			<tr>
+			<td>FEAAX</td><td>Fidelity Advisor Emerging Asia Fund</td><td>A</td><td>Fidelity Advisor</td>
+			</tr>
+			<tr>
+			<td>FAMKX</td><td>Fidelity Advisor Emerging Markets Fund</td><td>A</td><td>Fidelity Advisor</td>
+			</tr>
+			<tr>
+			<td>FCPAX</td><td>Fidelity Advisor International Cap. Appreciation Fund</td><td>A</td><td>Fidelity Advisor</td>
+			</tr>
+			<tr>
+			<td>FAIDX</td><td>Fidelity Advisor International Discovery Fund</td><td>A</td><td>Fidelity Advisor</td>
+			</tr>
+			<tr>
+			<td>FLFAX</td><td>Fidelity Advisor Latin America Fund</td><td>A</td><td>Fidelity Advisor</td>
+			</tr>
+			<tr>
+			<td>FAOAX</td><td>Fidelity Advisor Overseas Fund</td><td>A</td><td>Fidelity Advisor</td>
+			</tr>
+			<tr>
+
+			<td>MFBFX</td><td>MFS Corporate Bond Fund</td><td>A</td><td>MFS</td>
+			</tr>
+			<tr>
+			<td>MFBGX</td><td>MFS Corporate Bond Fund</td><td>R1</td><td>MFS</td>
+			</tr>
+			<tr>
+			<td>MBRRX</td><td>MFS Corporate Bond Fund</td><td>R2</td><td>MFS</td>
+			</tr>
+			<tr>
+			<td>DIFAX</td><td>MFS Diversified Income Fund</td><td>A</td><td>MFS</td>
+			</tr>
+			<tr>
+			<td>MFGSX</td><td>MFS Government Securities Fund</td><td>A</td><td>MFS</td>
+			</tr>
+			<tr>
+			<td>MFGGX</td><td>MFS Government Securities Fund</td><td>R1</td><td>MFS</td>
+			</tr>
+			<tr>
+			<td>MGVSX</td><td>MFS Government Securities Fund</td><td>R2</td><td>MFS</td>
+			</tr>
+			<tr>
+			<td>MFIOX</td><td>MFS Income Fund</td><td>A</td><td>MFS</td>
+			</tr>
+			<tr>
+			<td>MLLAX</td><td>MFS Lifetime Income Fund</td><td>A</td><td>MFS</td>
+			</tr>
+			<tr>
+			<td>MQLFX</td><td>MFS Limited Maturity Fund</td><td>A</td><td>MFS</td>
+			</tr>
+			<tr>
+			<td>MQLGX</td><td>MFS Limited Maturity Fund</td><td>R1</td><td>MFS</td>
+			</tr>
+			<tr>
+			<td>MLMRX</td><td>MFS Limited Maturity Fund</td><td>R2</td><td>MFS</td>
+			</tr>
+			<tr>
+			<td>MRBFX</td><td>MFS Total Return Bond Fund</td><td>A</td><td>MFS</td>
+			</tr>
+			<tr>
+			<td>MRBGX</td><td>MFS Total Return Bond Fund</td><td>R1</td><td>MFS</td>
+			</tr>
+			<tr>
+			<td>MRRRX</td><td>MFS Total Return Bond Fund</td><td>R2</td><td>MFS</td>
+			</tr>
+			<tr>
+
+			<td>MFALX</td><td>MFS Alabama Municipal Bond Fund</td><td>A</td><td>MFS</td>
+			</tr>
+			<tr>
+			<td>MFARX</td><td>MFS Arkansas Municipal Bond Fund</td><td>A</td><td>MFS</td>
+			</tr>
+			<tr>
+			<td>MCFTX</td><td>MFS California Municipal Bond Fund</td><td>A</td><td>MFS</td>
+			</tr>
+			<tr>
+			<td>MMGAX</td><td>MFS Georgia Municipal Bond Fund</td><td>A</td><td>MFS</td>
+			</tr>
+			<tr>
+			<td>MFSMX</td><td>MFS Maryland Municipal Bond Fund</td><td>A</td><td>MFS</td>
+			</tr>
+			<tr>
+			<td>MFSSX</td><td>MFS Massachusetts Municipal Bond Fund</td><td>A</td><td>MFS</td>
+			</tr>
+			<tr>
+			<td>MISSX</td><td>MFS Mississippi Municipal Bond Fund</td><td>A</td><td>MFS</td>
+			</tr>
+			<tr>
+			<td>MMHYX</td><td>MFS Municipal High Income Fund</td><td>A</td><td>MFS</td>
+			</tr>
+			<tr>
+			<td>MFIAX</td><td>MFS Municipal Income Fund</td><td>A</td><td>MFS</td>
+			</tr>
+			<tr>
+			<td>MTLFX</td><td>MFS Municipal Limited Maturity Fund</td><td>A</td><td>MFS</td>
+			</tr>
+			<tr>
+			<td>MSNYX</td><td>MFS New York Municipal Bond Fund</td><td>A</td><td>MFS</td>
+			</tr>
+			<tr>
+			<td>MSNCX</td><td>MFS North Carolina Municipal Bond Fund</td><td>A</td><td>MFS</td>
+			</tr>
+			<tr>
+			<td>MFPAX</td><td>MFS Pennsylvania Municipal Bond Fund</td><td>A</td><td>MFS</td>
+			</tr>
+			<tr>
+			<td>MFSCX</td><td>MFS South Carolina Municipal Bond Fund</td><td>A</td><td>MFS</td>
+			</tr>
+			<tr>
+			<td>MSTNX</td><td>MFS Tennessee Municipal Bond Fund</td><td>A</td><td>MFS</td>
+			</tr>
+			<tr>
+			<td>MSVAX</td><td>MFS Virginia Municipal Bond Fund</td><td>A</td><td>MFS</td>
+			</tr>
+			<tr>
+			<td>MFWVX</td><td>MFS West Virginia Municipal Bond Fund</td><td>A</td><td>MFS</td>
+			</tr>
+			<tr>
+
+			<td>MACFX</td><td>MFS Conservative Allocation Fund</td><td>A</td><td>MFS</td>
+			</tr>
+			<tr>
+			<td>MACKX</td><td>MFS Conservative Allocation Fund</td><td>R1</td><td>MFS</td>
+			</tr>
+			<tr>
+			<td>MCARX</td><td>MFS Conservative Allocation Fund</td><td>R2</td><td>MFS</td>
+			</tr>
+			<tr>
+			<td>MAMAX</td><td>MFS Moderate Allocation Fund</td><td>A</td><td>MFS</td>
+			</tr>
+			<tr>
+			<td>MAMFX</td><td>MFS Moderate Allocation Fund</td><td>R1</td><td>MFS</td>
+			</tr>
+			<tr>
+			<td>MARRX</td><td>MFS Moderate Allocation Fund</td><td>R2</td><td>MFS</td>
+			</tr>
+			<tr>
+			<td>MSFRX</td><td>MFS Total Return Fund</td><td>A</td><td>MFS</td>
+			</tr>
+			<tr>
+			<td>MSFFX</td><td>MFS Total Return Fund</td><td>R1</td><td>MFS</td>
+			</tr>
+			<tr>
+			<td>MTRRX</td><td>MFS Total Return Fund</td><td>R2</td><td>MFS</td>
+			</tr>
+			<tr>
+
+			<td>MUEAX</td><td>MFS Blended Research Core Equity Fund</td><td>A</td><td>MFS</td>
+			</tr>
+			<tr>
+			<td>MRGAX</td><td>MFS Core Equity Fund</td><td>A</td><td>MFS</td>
+			</tr>
+			<tr>
+			<td>MRGGX</td><td>MFS Core Equity Fund</td><td>R1</td><td>MFS</td>
+			</tr>
+			<tr>
+			<td>MRERX</td><td>MFS Core Equity Fund</td><td>R2</td><td>MFS</td>
+			</tr>
+			<tr>
+			<td>MAGWX</td><td>MFS Growth Allocation Fund</td><td>A</td><td>MFS</td>
+			</tr>
+			<tr>
+			<td>MAGMX</td><td>MFS Growth Allocation Fund</td><td>R1</td><td>MFS</td>
+			</tr>
+			<tr>
+			<td>MGALX</td><td>MFS Growth Allocation Fund</td><td>R2</td><td>MFS</td>
+			</tr>
+			<tr>
+			<td>MFLAX</td><td>MFS Lifetime 2020 Fund</td><td>A</td><td>MFS</td>
+			</tr>
+			<tr>
+			<td>MLTAX</td><td>MFS Lifetime 2030 Fund</td><td>A</td><td>MFS</td>
+			</tr>
+			<tr>
+			<td>MLFAX</td><td>MFS Lifetime 2040 Fund</td><td>A</td><td>MFS</td>
+			</tr>
+			<tr>
+			<td>MFRFX</td><td>MFS Research Fund</td><td>A</td><td>MFS</td>
+			</tr>
+			<tr>
+			<td>MFRLX</td><td>MFS Research Fund</td><td>R1</td><td>MFS</td>
+			</tr>
+			<tr>
+			<td>MSRRX</td><td>MFS Research Fund</td><td>R2</td><td>MFS</td>
+			</tr>
+			<tr>
+			<td>MEIAX</td><td>MFS Value Fund</td><td>A</td><td>MFS</td>
+			</tr>
+			<tr>
+			<td>MEIGX</td><td>MFS Value Fund</td><td>R1</td><td>MFS</td>
+			</tr>
+			<tr>
+			<td>MVRRX</td><td>MFS Value Fund</td><td>R2</td><td>MFS</td>
+			</tr>
+			<tr>
+
+			<td>MEDAX</td><td>MFS Emerging Markets Debt Fund</td><td>A</td><td>MFS</td>
+			</tr>
+			<tr>
+			<td>MHOAX</td><td>MFS Global High Yield Fund</td><td>A</td><td>MFS</td>
+			</tr>
+			<tr>
+			<td>MHITX</td><td>MFS High Income Fund</td><td>A</td><td>MFS</td>
+			</tr>
+			<tr>
+			<td>MHIGX</td><td>MFS High Income Fund</td><td>R1</td><td>MFS</td>
+			</tr>
+			<tr>
+			<td>MIHRX</td><td>MFS High Income Fund</td><td>R2</td><td>MFS</td>
+			</tr>
+			<tr>
+
+			<td>MAAGX</td><td>MFS Aggressive Growth Allocation Fund</td><td>A</td><td>MFS</td>
+			</tr>
+			<tr>
+			<td>MAAFX</td><td>MFS Aggressive Growth Allocation Fund</td><td>R1</td><td>MFS</td>
+			</tr>
+			<tr>
+			<td>MIGFX</td><td>Mass. Investors Growth Stock Fund</td><td>A</td><td>MFS</td>
+			</tr>
+			<tr>
+			<td>MIGMX</td><td>Mass. Investors Growth Stock Fund</td><td>R1</td><td>MFS</td>
+			</tr>
+			<tr>
+			<td>MIRGX</td><td>Mass. Investors Growth Stock Fund</td><td>R2</td><td>MFS</td>
+			</tr>
+			<tr>
+			<td>MITTX</td><td>Massachusetts Investors Trust</td><td>A</td><td>MFS</td>
+			</tr>
+			<tr>
+			<td>MITGX</td><td>Massachusetts Investors Trust</td><td>R1</td><td>MFS</td>
+			</tr>
+			<tr>
+			<td>MIRTX</td><td>Massachusetts Investors Trust</td><td>R2</td><td>MFS</td>
+			</tr>
+			<tr>
+			<td>MWEFX</td><td>MFS Global Equity Fund</td><td>A</td><td>MFS</td>
+			</tr>
+			<tr>
+			<td>MWOFX</td><td>MFS Global Growth Fund</td><td>A</td><td>MFS</td>
+			</tr>
+			<tr>
+			<td>MFWTX</td><td>MFS Global Total Return Fund</td><td>A</td><td>MFS</td>
+			</tr>
+			<tr>
+			<td>MFEGX</td><td>MFS Growth Fund</td><td>A</td><td>MFS</td>
+			</tr>
+			<tr>
+			<td>MFELX</td><td>MFS Growth Fund</td><td>R1</td><td>MFS</td>
+			</tr>
+			<tr>
+			<td>MEGRX</td><td>MFS Growth Fund</td><td>R2</td><td>MFS</td>
+			</tr>
+			<tr>
+			<td>OTCAX</td><td>MFS Mid Cap Growth Fund</td><td>A</td><td>MFS</td>
+			</tr>
+			<tr>
+			<td>OCTGX</td><td>MFS Mid Cap Growth Fund</td><td>R1</td><td>MFS</td>
+			</tr>
+			<tr>
+			<td>MCPRX</td><td>MFS Mid Cap Growth Fund</td><td>R2</td><td>MFS</td>
+			</tr>
+			<tr>
+			<td>MVCAX</td><td>MFS Mid Cap Value Fund</td><td>A</td><td>MFS</td>
+			</tr>
+			<tr>
+			<td>MNDAX</td><td>MFS New Discovery Fund</td><td>A</td><td>MFS</td>
+			</tr>
+			<tr>
+			<td>MNDGX</td><td>MFS New Discovery Fund</td><td>R1</td><td>MFS</td>
+			</tr>
+			<tr>
+			<td>MNDRX</td><td>MFS New Discovery Fund</td><td>R2</td><td>MFS</td>
+			</tr>
+			<tr>
+
+			<td>MTCAX</td><td>MFS Technology Fund</td><td>A</td><td>MFS</td>
+			</tr>
+			<tr>
+			<td>MTCKX</td><td>MFS Technology Fund</td><td>R1</td><td>MFS</td>
+			</tr>
+			<tr>
+			<td>MTERX</td><td>MFS Technology Fund</td><td>R2</td><td>MFS</td>
+			</tr>
+			<tr>
+			<td>MMUFX</td><td>MFS Utilities Fund</td><td>A</td><td>MFS</td>
+			</tr>
+			<tr>
+			<td>MMUGX</td><td>MFS Utilities Fund</td><td>R1</td><td>MFS</td>
+			</tr>
+			<tr>
+			<td>MURRX</td><td>MFS Utilities Fund</td><td>R2</td><td>MFS</td>
+			</tr>
+			<tr>
+
+			<td>MEMAX</td><td>MFS Emerging Markets Equity Fund</td><td>A</td><td>MFS</td>
+			</tr>
+			<tr>
+			<td>MDIDX</td><td>MFS International Diversification Fund</td><td>A</td><td>MFS</td>
+			</tr>
+			<tr>
+			<td>MGRAX</td><td>MFS International Growth Fund</td><td>A</td><td>MFS</td>
+			</tr>
+			<tr>
+			<td>MIDAX</td><td>MFS International New Discovery Fund</td><td>A</td><td>MFS</td>
+			</tr>
+			<tr>
+			<td>MRSAX</td><td>MFS Research International Fund</td><td>A</td><td>MFS</td>
+			</tr>
+			<tr>
+			<td>MRSGX</td><td>MFS Research International Fund</td><td>R1</td><td>MFS</td>
+			</tr>
+			<tr>
+			<td>MRSRX</td><td>MFS Research International Fund</td><td>R2</td><td>MFS</td>
+			</tr>
+			<tr>
+
+			<td>PDDXX</td><td>Putnam Money Market Fund</td><td>A</td><td>Putnam</td>
+			</tr>
+			<tr>
+			<td>PTMXX</td><td>Putnam Money Market Fund</td><td>M</td><td>Putnam</td>
+			</tr>
+			<tr>
+			<td>PURXX</td><td>Putnam Money Market Fund</td><td>R</td><td>Putnam</td>
+			</tr>
+			<tr>
+
+			<td>PARTX</td><td>Short Duration Bond Fund</td><td>A</td><td>Putnam</td>
+			</tr>
+			<tr>
+			<td>PTRNX</td><td>Fixed Income Absolute Return Fund</td><td>A</td><td>Putnam</td>
+			</tr>
+			<tr>
+			<td>PDINX</td><td>Putnam Diversified Income</td><td>A</td><td>Putnam</td>
+			</tr>
+			<tr>
+			<td>PDVMX</td><td>Putnam Diversified Income</td><td>M</td><td>Putnam</td>
+			</tr>
+			<tr>
+			<td>PDVRX</td><td>Putnam Diversified Income</td><td>R</td><td>Putnam</td>
+			</tr>
+			<tr>
+			<td>PDVYX</td><td>Putnam Diversified Income</td><td>Y</td><td>Putnam</td>
+			</tr>
+			<tr>
+			<td>PINCX</td><td>Putnam Income Fund</td><td>A</td><td>Putnam</td>
+			</tr>
+			<tr>
+			<td>PNCMX</td><td>Putnam Income Fund</td><td>M</td><td>Putnam</td>
+			</tr>
+			<tr>
+			<td>PIFRX</td><td>Putnam Income Fund</td><td>R</td><td>Putnam</td>
+			</tr>
+			<tr>
+			<td>PNCYX</td><td>Putnam Income Fund</td><td>Y</td><td>Putnam</td>
+			</tr>
+			<tr>
+			<td>PSDTX</td><td>Putnam Ultra Short Duration Income Fund</td><td>A</td><td>Putnam</td>
+			</tr>
+			<tr>
+			<td>PGSIX</td><td>Putnam Mortgage Securities Fund</td><td>A</td><td>Putnam</td>
+			</tr>
+			<tr>
+			<td>PGSMX</td><td>Putnam Mortgage Securities Fund</td><td>M</td><td>Putnam</td>
+			</tr>
+			<tr>
+			<td>PGVRX</td><td>Putnam Mortgage Securities Fund</td><td>R</td><td>Putnam</td>
+			</tr>
+			<tr>
+			<td>PUSYX</td><td>Putnam Mortgage Securities Fund</td><td>Y</td><td>Putnam</td>
+			</tr>
+			<tr>
+
+			<td>PCTEX</td><td>Putnam California Tax Exempt Income Fund</td><td>A</td><td>Putnam</td>
+			</tr>
+			<tr>
+			<td>PCLMX</td><td>Putnam California Tax Exempt Income Fund</td><td>M</td><td>Putnam</td>
+			</tr>
+			<tr>
+			<td>PXMAX</td><td>Putnam Massachusetts Tax Exempt Income Fund</td><td>A</td><td>Putnam</td>
+			</tr>
+			<tr>
+			<td>PXMNX</td><td>Putnam Minnesota Tax Exempt Income Fund</td><td>A</td><td>Putnam</td>
+			</tr>
+			<tr>
+			<td>PTNJX</td><td>Putnam New Jersey Tax Exempt Income Fund</td><td>A</td><td>Putnam</td>
+			</tr>
+			<tr>
+			<td>PTEIX</td><td>Putnam New York Tax Exempt Income Fund</td><td>A</td><td>Putnam</td>
+			</tr>
+			<tr>
+			<td>PXOHX</td><td>Putnam Ohio Tax Exempt Income Fund</td><td>A</td><td>Putnam</td>
+			</tr>
+			<tr>
+			<td>PTEPX</td><td>Putnam Pennsylvania Tax Exempt Income Fund</td><td>A</td><td>Putnam</td>
+			</tr>
+			<tr>
+			<td>PPNAX</td><td>Putnam Strategic Intermediate Municipal Fund</td><td>A</td><td>Putnam</td>
+			</tr>
+			<tr>
+			<td>PTAEX</td><td>Putnam Tax Exempt Income Fund</td><td>A</td><td>Putnam</td>
+			</tr>
+			<tr>
+			<td>PTXMX</td><td>Putnam Tax Exempt Income Fund</td><td>M</td><td>Putnam</td>
+			</tr>
+			<tr>
+			<td>PTHAX</td><td>Putnam Tax Free High Yield Fund</td><td>A</td><td>Putnam</td>
+			</tr>
+			<tr>
+			<td>PTYMX</td><td>Putnam Tax Free High Yield Fund</td><td>M</td><td>Putnam</td>
+			</tr>
+			<tr>
+
+			<td>PGEOX</td><td>George Putnam Balanced Fund</td><td>A</td><td>Putnam</td>
+			</tr>
+			<tr>
+			<td>PGEMX</td><td>George Putnam Balanced Fund</td><td>M</td><td>Putnam</td>
+			</tr>
+			<tr>
+			<td>PGPRX</td><td>George Putnam Balanced Fund</td><td>R</td><td>Putnam</td>
+			</tr>
+			<tr>
+			<td>PGEYX</td><td>George Putnam Balanced Fund</td><td>Y</td><td>Putnam</td>
+			</tr>
+			<tr>
+			<td>PDMAX</td><td>Mult-Asset Absolute Return Fund</td><td>A</td><td>Putnam</td>
+			</tr>
+			<tr>
+			<td>PCONX</td><td>Putnam Convertible Securities Fund</td><td>A</td><td>Putnam</td>
+			</tr>
+			<tr>
+			<td>PCNMX</td><td>Putnam Convertible Securities Fund</td><td>M</td><td>Putnam</td>
+			</tr>
+			<tr>
+			<td>PCVRX</td><td>Putnam Convertible Securities Fund</td><td>R</td><td>Putnam</td>
+			</tr>
+			<tr>
+			<td>PCGYX</td><td>Putnam Convertible Securities Fund</td><td>Y</td><td>Putnam</td>
+			</tr>
+			<tr>
+			<td>PABAX</td><td>Putnam Dynamic Asset Allocation Balanced Fund</td><td>A</td><td>Putnam</td>
+			</tr>
+			<tr>
+			<td>PABMX</td><td>Putnam Dynamic Asset Allocation Balanced Fund</td><td>M</td><td>Putnam</td>
+			</tr>
+			<tr>
+			<td>PAARX</td><td>Putnam Dynamic Asset Allocation Balanced Fund</td><td>R</td><td>Putnam</td>
+			</tr>
+			<tr>
+			<td>PABYX</td><td>Putnam Dynamic Asset Allocation Balanced Fund</td><td>Y</td><td>Putnam</td>
+			</tr>
+			<tr>
+			<td>PACAX</td><td>Putnam Dynamic Asset Allocation Conservative Fund</td><td>A</td><td>Putnam</td>
+			</tr>
+			<tr>
+			<td>PACMX</td><td>Putnam Dynamic Asset Allocation Conservative Fund</td><td>M</td><td>Putnam</td>
+			</tr>
+			<tr>
+			<td>PACRX</td><td>Putnam Dynamic Asset Allocation Conservative Fund</td><td>R</td><td>Putnam</td>
+			</tr>
+			<tr>
+			<td>PACYX</td><td>Putnam Dynamic Asset Allocation Conservative Fund</td><td>Y</td><td>Putnam</td>
+			</tr>
+			<tr>
+
+			<td>PAEAX</td><td>Putnam Dynamic Asset Allocation Growth Fund</td><td>A</td><td>Putnam</td>
+			</tr>
+			<tr>
+			<td>PAGMX</td><td>Putnam Dynamic Asset Allocation Growth Fund</td><td>M</td><td>Putnam</td>
+			</tr>
+			<tr>
+			<td>PASRX</td><td>Putnam Dynamic Asset Allocation Growth Fund</td><td>R</td><td>Putnam</td>
+			</tr>
+			<tr>
+			<td>PAGYX</td><td>Putnam Dynamic Asset Allocation Growth Fund</td><td>Y</td><td>Putnam</td>
+			</tr>
+			<tr>
+			<td>PEYAX</td><td>Putnam Equity Income Fund</td><td>A</td><td>Putnam</td>
+			</tr>
+			<tr>
+			<td>PEIMX</td><td>Putnam Equity Income Fund</td><td>M</td><td>Putnam</td>
+			</tr>
+			<tr>
+			<td>PEQRX</td><td>Putnam Equity Income Fund</td><td>R</td><td>Putnam</td>
+			</tr>
+			<tr>
+			<td>PEIYX</td><td>Putnam Equity Income Fund</td><td>Y</td><td>Putnam</td>
+			</tr>
+			<tr>
+			<td>POGAX</td><td>Putnam Growth Opportunities Fund</td><td>A</td><td>Putnam</td>
+			</tr>
+			<tr>
+			<td>PGOMX</td><td>Putnam Growth Opportunities Fund</td><td>M</td><td>Putnam</td>
+			</tr>
+			<tr>
+			<td>PGORX</td><td>Putnam Growth Opportunities Fund</td><td>R</td><td>Putnam</td>
+			</tr>
+			<tr>
+			<td>PGOYX</td><td>Putnam Growth Opportunities Fund</td><td>Y</td><td>Putnam</td>
+			</tr>
+			<tr>
+			<td>PINVX</td><td>Putnam Investors Fund</td><td>A</td><td>Putnam</td>
+			</tr>
+			<tr>
+			<td>PNVMX</td><td>Putnam Investors Fund</td><td>M</td><td>Putnam</td>
+			</tr>
+			<tr>
+			<td>PIVRX</td><td>Putnam Investors Fund</td><td>R</td><td>Putnam</td>
+			</tr>
+			<tr>
+			<td>PNVYX</td><td>Putnam Investors Fund</td><td>Y</td><td>Putnam</td>
+			</tr>
+			<tr>
+			<td>PNRAX</td><td>Putnam Research Fund</td><td>A</td><td>Putnam</td>
+			</tr>
+			<tr>
+			<td>PRFMX</td><td>Putnam Research Fund</td><td>M</td><td>Putnam</td>
+			</tr>
+			<tr>
+			<td>PRSRX</td><td>Putnam Research Fund</td><td>R</td><td>Putnam</td>
+			</tr>
+			<tr>
+			<td>PURYX</td><td>Putnam Research Fund</td><td>Y</td><td>Putnam</td>
+			</tr>
+			<tr>
+			<td>PPRPX</td><td>Putnam PanAgora Risk Parity Fund</td><td>A</td><td>Putnam</td>
+			</tr>
+			<tr>
+			<td>PRRWX</td><td>Putnam Retirement Ready 2035 Fund</td><td>A</td><td>Putnam</td>
+			</tr>
+			<tr>
+			<td>PRRFX</td><td>Putnam Retirement Ready 2055 Fund</td><td>A</td><td>Putnam</td>
+			</tr>
+			<tr>
+
+			<td>PFLRX</td><td>Putnam Floating Rate Income Fund</td><td>A</td><td>Putnam</td>
+			</tr>
+			<tr>
+			<td>PGGIX</td><td>Putnam Global Income</td><td>A</td><td>Putnam</td>
+			</tr>
+			<tr>
+			<td>PGGMX</td><td>Putnam Global Income</td><td>M</td><td>Putnam</td>
+			</tr>
+			<tr>
+			<td>PGBRX</td><td>Putnam Global Income</td><td>R</td><td>Putnam</td>
+			</tr>
+			<tr>
+			<td>PHYIX</td><td>Putnam High Yield</td><td>A</td><td>Putnam</td>
+			</tr>
+			<tr>
+			<td>PPMFX</td><td>Putnam PanAgora Managed Futures Fund</td><td>A</td><td>Putnam</td>
+			</tr>
+			<tr>
+
+			<td>PEQUX</td><td>Putnam Global Equity Fund</td><td>A</td><td>Putnam</td>
+			</tr>
+			<tr>
+			<td>PEQMX</td><td>Putnam Global Equity Fund</td><td>M</td><td>Putnam</td>
+			</tr>
+			<tr>
+			<td>PGLRX</td><td>Putnam Global Equity Fund</td><td>R</td><td>Putnam</td>
+			</tr>
+			<tr>
+			<td>PEQYX</td><td>Putnam Global Equity Fund</td><td>Y</td><td>Putnam</td>
+			</tr>
+			<tr>
+			<td>PNOPX</td><td>Sustainable Leaders Fund</td><td>A</td><td>Putnam</td>
+			</tr>
+			<tr>
+			<td>PNOMX</td><td>Sustainable Leaders Fund</td><td>M</td><td>Putnam</td>
+			</tr>
+			<tr>
+			<td>PNORX</td><td>Sustainable Leaders Fund</td><td>R</td><td>Putnam</td>
+			</tr>
+			<tr>
+			<td>PNOYX</td><td>Sustainable Leaders Fund</td><td>Y</td><td>Putnam</td>
+			</tr>
+			<tr>
+			<td>PMVAX</td><td>Sustainable Future Fund</td><td>A</td><td>Putnam</td>
+			</tr>
+			<tr>
+			<td>PMCVX</td><td>Sustainable Future Fund</td><td>M</td><td>Putnam</td>
+			</tr>
+			<tr>
+			<td>PMVRX</td><td>Sustainable Future Fund</td><td>R</td><td>Putnam</td>
+			</tr>
+			<tr>
+			<td>PMVYX</td><td>Sustainable Future Fund</td><td>Y</td><td>Putnam</td>
+			</tr>
+			<tr>
+			<td>PNSAX</td><td>Putnam Small Cap Growth Fund</td><td>A</td><td>Putnam</td>
+			</tr>
+			<tr>
+			<td>PSGMX</td><td>Putnam Small Cap Growth Fund</td><td>M</td><td>Putnam</td>
+			</tr>
+			<tr>
+			<td>PSGRX</td><td>Putnam Small Cap Growth Fund</td><td>R</td><td>Putnam</td>
+			</tr>
+			<tr>
+			<td>PSYGX</td><td>Putnam Small Cap Growth Fund</td><td>Y</td><td>Putnam</td>
+			</tr>
+			<tr>
+			<td>PSLAX</td><td>Putnam Small Cap Value Fund</td><td>A</td><td>Putnam</td>
+			</tr>
+			<tr>
+
+			<td>PHSTX</td><td>Putnam Global Health Care Fund</td><td>A</td><td>Putnam</td>
+			</tr>
+			<tr>
+			<td>PHLMX</td><td>Putnam Global Health Care Fund</td><td>M</td><td>Putnam</td>
+			</tr>
+			<tr>
+			<td>PHSRX</td><td>Putnam Global Health Care Fund</td><td>R</td><td>Putnam</td>
+			</tr>
+			<tr>
+			<td>PHSYX</td><td>Putnam Global Health Care Fund</td><td>Y</td><td>Putnam</td>
+			</tr>
+			<tr>
+
+			<td>PNVAX</td><td>Putnam International Capital Opportunities Fund</td><td>A</td><td>Putnam</td>
+			</tr>
+			<tr>
+			<td>PIVMX</td><td>Putnam International Capital Opportunities Fund</td><td>M</td><td>Putnam</td>
+			</tr>
+			<tr>
+			<td>PICRX</td><td>Putnam International Capital Opportunities Fund</td><td>R</td><td>Putnam</td>
+			</tr>
+			<tr>
+			<td>PIVYX</td><td>Putnam International Capital Opportunities Fund</td><td>Y</td><td>Putnam</td>
+			</tr>
+			<tr>
+			<td>POVSX</td><td>Putnam International Equity Fund</td><td>A</td><td>Putnam</td>
+			</tr>
+			<tr>
+			<td>POVMX</td><td>Putnam International Equity Fund</td><td>M</td><td>Putnam</td>
+			</tr>
+			<tr>
+			<td>PIERX</td><td>Putnam International Equity Fund</td><td>R</td><td>Putnam</td>
+			</tr>
+			<tr>
+			<td>POVYX</td><td>Putnam International Equity Fund</td><td>Y</td><td>Putnam</td>
+			</tr>
+			<tr>
+			<td>PNGAX</td><td>Putnam International Value Fund</td><td>A</td><td>Putnam</td>
+			</tr>
+			<tr>
+			<td>PIGMX</td><td>Putnam International Value Fund</td><td>M</td><td>Putnam</td>
+			</tr>
+			<tr>
+			<td>PIIRX</td><td>Putnam International Value Fund</td><td>R</td><td>Putnam</td>
+			</tr>
+
+
+
+
+    </table>
+  </div>
+
+  <script>
+    function myFunction() {
+      // Declare variables
+      var input, filter, table, tr, td, i, txtValue;
+      input = document.getElementById("myInput");
+      filter = input.value.toUpperCase();
+      table = document.getElementById("myTable");
+      tr = table.getElementsByTagName("tr");
+			td = table.getElementsByTagName("td");
+
+      // Loop through all table rows, and hide those who don't match the search query
+      for (i = 0; i < tr.length; i++) {
+        td = tr[i].getElementsByTagName("td")[0];
+        if (td) {
+          txtValue = td.textContent || td.innerText;
+          if (txtValue.toUpperCase().indexOf(filter) > -1) {
+            tr[i].style.display = "";
+          } else {
+            tr[i].style.display = "none";
+          }
+        }
+      }
+    }
+  </script>
+
+</body>
+
+</html>
