@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<title>E-Form Copy</title>
+
+	<link rel="stylesheet" href="stylesheet.css">
+
+</head>
+
+<body>
+
+	<div class="sidenav">
+    <a href="index.html">Home</a>
+    <br>
+    <a href="redemption.html">Redemption</a>
+    <a href="purchase.html">Purchase</a>
+    <a href="exchange.html">Exchange</a>
+    <a href="address.html">Address Change</a>
+    <br>
+    <a href="formReq.html">Form Request</a>
+    <a href="updatingpac.html">Updating PAC</a>
+    <br>
+    <a href="eformcopy.html">E-Form Copy</a>
+		<a href="letargeform.html">LET/ARG/E-Forms</a>
+		<a href="routingmatrix.html">Routing Matrix</a>
+    <br>
+    <a href="numbers.html">Phone Numbers</a>
+    <a href="auxcodes.html">Aux Codes</a>
+    <br>
+	</div>
+
+	<div class="main">
+
+		<h1>E-Form Quick Copy</h1>
+
+		<h2>Comment/Reason</h2>
+
+		<table class="copyContent">
+			<tr>
+				<th><strong>Content</strong></th>
+				<th><strong>Field</strong></th>
+				<th><strong>Copy</strong></th>
+			</tr>
+			<tr>
+				<td><strong>Redemption > $25k</strong></td>
+				<td data-type="clipContent">RLI
+					<script type="text/javascript">
+						function currentTime() {
+							var currentdate = new Date();
+							var datetime = (currentdate.getMonth()+1)  + "/"
+								+ currentdate.getDate() + "/"
+								+ currentdate.getFullYear() + " "
+								+ currentdate.getHours() + ":"
+								+ currentdate.getMinutes() + ":"
+								+ currentdate.getSeconds();
+								document.write(datetime);
+						}
+						document.getElementById("time").innerHTML = currentTime();
+					</script>
+					- Shareholder wants to do a REDEMPTION over $25,000. </td>
+				<td><button data-type="copy">Copy</button></td>
+			</tr>
+			<tr>
+				<td><strong>Federal Wire</strong></td>
+				<td data-type="clipContent">RLI
+
+					<script type="text/javascript">
+						function currentTime() {
+							var currentdate = new Date();
+							var datetime = (currentdate.getMonth()+1)  + "/"
+								+ currentdate.getDate() + "/"
+								+ currentdate.getFullYear() + " "
+								+ currentdate.getHours() + ":"
+								+ currentdate.getMinutes() + ":"
+								+ currentdate.getSeconds();
+								document.write(datetime);
+						}
+						document.getElementById("time").innerHTML = currentTime();
+					</script>
+
+					- Shareholder wants to do REDEMPTION by FEDERAL WIRE.
+					If trade cannot be processed as FEDERAL WIRE, please process as ACH. </td>
+				<td><button data-type="copy">Copy</button></td>
+			</tr>
+			<tr>
+				<td><strong>Beneficiary IRA</strong></td>
+				<td data-type="clipContent">RLI
+
+					<script type="text/javascript">
+						function currentTime() {
+							var currentdate = new Date();
+							var datetime = (currentdate.getMonth()+1)  + "/"
+								+ currentdate.getDate() + "/"
+								+ currentdate.getFullYear() + " "
+								+ currentdate.getHours() + ":"
+								+ currentdate.getMinutes() + ":"
+								+ currentdate.getSeconds();
+								document.write(datetime);
+						}
+						document.getElementById("time").innerHTML = currentTime();
+					</script>
+
+					- Shareholder is requesting a REDEMPTION from a BENEFICIARY IRA. </td>
+				<td><button data-type="copy">Copy</button></td>
+			</tr>
+			<tr>
+				<td><strong>Error in CRM</strong></td>
+				<td data-type="clipContent">RLI
+
+					<script type="text/javascript">
+						function currentTime() {
+							var currentdate = new Date();
+							var datetime = (currentdate.getMonth()+1)  + "/"
+								+ currentdate.getDate() + "/"
+								+ currentdate.getFullYear() + " "
+								+ currentdate.getHours() + ":"
+								+ currentdate.getMinutes() + ":"
+								+ currentdate.getSeconds();
+								document.write(datetime);
+						}
+						document.getElementById("time").innerHTML = currentTime();
+					</script>
+
+					- Error in CRM when submitting request. </td>
+				<td><button data-type="copy">Copy</button></td>
+			</tr>
+		</table>
+
+	</div>
+
+	<script>
+	document.querySelectorAll('button[data-type="copy"]')
+  .forEach(function(button){
+      button.addEventListener('click', function(){
+      let email = this.parentNode.parentNode
+        .querySelector('td[data-type="clipContent"]')
+        .innerText;
+
+      let tmp = document.createElement('textarea');
+          tmp.value = email;
+          tmp.setAttribute('readonly', '');
+          tmp.style.position = 'absolute';
+          tmp.style.left = '-9999px';
+          document.body.appendChild(tmp);
+          tmp.select();
+          document.execCommand('copy');
+          document.body.removeChild(tmp);
+          console.log(`${clipContent} copied.`);
+    });
+	});
+	</script>
+
+
+</body>
+
+</html>

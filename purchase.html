@@ -12,16 +12,24 @@
 <body>
 
   <!-- Side navigation -->
-	<div class="sidenav">
-	  <a href="index.html">Home</a>
+  <div class="sidenav">
+    <a href="index.html">Home</a>
     <br>
-	  <a href="redemption.html">Redemption</a>
-    <a href="redemption_vol.html">Redemption - Voluntary</a>
-		<a href="purchase.html">Purchase</a>
-		<a href="exchange.html">Exchange</a>
-		<a href="address.html">Address Change</a>
+    <a href="redemption.html">Redemption</a>
+    <a href="purchase.html">Purchase</a>
+    <a href="exchange.html">Exchange</a>
+    <a href="address.html">Address Change</a>
     <br>
-		<a href="lookup.html">Fund Lookup</a>
+    <a href="formReq.html">Form Request</a>
+    <a href="updatingpac.html">Updating PAC</a>
+    <br>
+    <a href="eformcopy.html">E-Form Copy</a>
+    <a href="letargeform.html">LET/ARG/E-Forms</a>
+		<a href="routingmatrix.html">Routing Matrix</a>
+    <br>
+    <a href="numbers.html">Phone Numbers</a>
+    <a href="auxcodes.html">Aux Codes</a>
+    <br>
 	</div>
 
   <div class="main">
@@ -60,6 +68,41 @@
       ACCOUNT PREVIOUSLY VERIFIED.
 
       <br><br>
+      <iframe src="lookup2.html" width=100% height="500px"></iframe>
+      <br><br>
+
+    </div>
+
+
+      <script type="text/javascript">
+
+        function currentTime() {
+
+          var currentdate = new Date();
+          var datetime = "<strong>" + (currentdate.getMonth()+1)  + "/"
+            + currentdate.getDate() + "/"
+            + currentdate.getFullYear() + " "
+            + currentdate.getHours() + ":"
+            + currentdate.getMinutes() + ":"
+            + currentdate.getSeconds() + "</strong>";
+
+            document.write(datetime);
+
+  //        //var today = new Date();
+  //        var dd = String(today.getDate()).padStart(2, '0');
+  //        var mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
+  //        var yyyy = today.getFullYear();
+
+  //        today = mm + '/' + dd + '/' + yyyy;
+  //        document.write(today);
+        }
+
+        document.getElementById("time").innerHTML = currentTime();
+
+      </script>
+
+    <div class="script">
+      <br>
 
       THIS PURCHASE WILL BE PROCESSED AS OF ThE MARKET CLOSE (date in CRM). A CONFIRMATION
       LETTER WILL BE SENT OUT THE NEXT BUSINESS DAY, ARRIVING TO THE ADDRESS OF RECORD

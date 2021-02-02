@@ -38,6 +38,10 @@ sidebar (less padding and a smaller font size) */
   .sidenav a {font-size: 18px;}
 }
 
+.nonquote {
+  color: black;
+}
+
 /* ======================================================================= */
 /* Style the button that is used to open and close the collapsible content */
 .collapsible {
@@ -118,4 +122,29 @@ sidebar (less padding and a smaller font size) */
 #myTable tr.header, #myTable tr:hover {
   /* Add a grey background color to the table header and on hover */
   background-color: #f1f1f1;
+}
+
+/*============================================================================*/
+
+.copyContent {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.copyContent td, .copyContent th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+.copyContent tr:nth-child(even){background-color: #f2f2f2;}
+
+.copyContent tr:hover {background-color: #ddd;}
+
+.copyContent th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: black;
+  color: white;
 }

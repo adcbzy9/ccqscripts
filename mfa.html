@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<title>MFA</title>
+
+	<link rel="stylesheet" href="stylesheet.css">
+
+
+</head>
+
+<body>
+
+	<div class="sidenav">
+    <a href="index.html">Home</a>
+    <br>
+    <a href="redemption.html">Redemption</a>
+    <a href="purchase.html">Purchase</a>
+    <a href="exchange.html">Exchange</a>
+    <a href="address.html">Address Change</a>
+    <br>
+    <a href="formReq.html">Form Request</a>
+    <a href="updatingpac.html">Updating PAC</a>
+    <br>
+    <a href="eformcopy.html">E-Form Copy</a>
+		<a href="letargeform.html">LET/ARG/E-Forms</a>
+		<a href="routingmatrix.html">Routing Matrix</a>
+    <br>
+    <a href="numbers.html">Phone Numbers</a>
+    <a href="auxcodes.html">Aux Codes</a>
+    <br>
+	</div>
+
+	<div class="main">
+
+		<h1>MFA</h1>
+		<h2>(Redemption Calls Only)</h2>
+
+		Shareholder calling:
+		<ul>
+			<li>Entity accounts (i.e Trusts, Corporations, Non-Profits) are excluded</li>
+			<li>Primerica Representatives called as the Representative are excluded
+			Note: Please remember we cannot take trade instructions from an Office Manager
+			and that Primerica Representatives cannot authorize anyone to speak or act
+			on their or the shareholder’s behalf.</li>
+		</ul>
+
+		Confirm one of the following scenarios is true on the REDEMPTION requests and
+		that we have a cell phone number of file, then follow the scripting below
+
+		<ul>
+			<li><strong>The redemption amount is greater than $30,000</strong></li>
+			<li><strong>An address on the account changed within the past 3 months</strong></li>
+			<li><strong>Bank instructions were added/changed on an account within the past 3 months</strong></li>
+		</ul>
+
+		<div class="script">
+			"I WOULD BE HAPPY TO HELP YOU WITH YOUR REDEMPTION TODAY, BEFORE WE BEGIN, MAY I
+			ASK FOR YOUR CELL PHONE NUMBER?"
+
+		</div>
+
+		<br>
+
+		Note – If mobile phone number is not on populated in CRM or the mobile phone is
+		not accessible by the shareholder, Call Center defaults to standard authentication according to CCQ Guidebook.
+
+		<br><br>
+
+		<strong>(The Call Center should NEVER provide any phone number to the caller
+			prior to it being verified)</strong>
+
+		<br>
+
+		<h3>Option 1: No Cell Phone Number Currently on File</h3>
+
+		<ol>
+			<li>If we do not have it on file - We should update the account and then proceed
+			with the redemption request <strong>without sending the MFA Code.</strong></li>
+
+			<li>No memorandum will need to be added to the account.</li>
+
+		</ol>
+
+		<h3>Option 2: The Caller Does Not Have a Cell Phone</h3>
+
+		If caller does not have a cell phone number we should then proceed with the
+		redemption and must add the following memorandum to the account –
+
+		<br><br>
+
+		<strong>Callers Name(s) – Currently does not have a cell phone</strong>
+
+		<br><br>
+
+		See bottom of procedure on how to add a memorandum
+
+
+		<h3>Option 3: We Have the Cell Phone Number on File</h3>
+
+		If we currently have the cell phone number on file –
+
+		<br><br>
+
+		<div class="script">
+			"TO INCREASE OUR LEVEL OF SRCURITY - I WOULD LIKE TO SEND YOU A ONE-TIME
+			AUTHORIZATION CODE. DO YOU HAVE YOUR CELL PHONE WITH YOU AND ARE YOU ABLE TO RECEIVE TEXTS?"
+
+		</div>
+
+		<br>
+		<button type="button" class="collapsible">
+			Shareholder Answers No
+		</button>
+
+		<div class="content">
+
+			<br>
+
+				Continue with the redemption request as we do today
+				(see the CCQ Guidebook), please inform the caller that on future withdrawals
+				an authorization code may be required before placing a redemption and they
+				should have their cell phone available before calling into to the customer service line.
+
+				<br><br>
+
+				<div class="script">
+
+					“Ok, I totally understand that this is a new request and I will go ahead
+					and continue to process your transaction today.”
+					“Please keep in mind that going forward you may be required to provide us with
+					an authorization code before we can process your redemption request, so in
+					the future when calling in to do a redemption request please have your cell
+					phone available in case we need to send an authorization code.”
+
+				</div>
+
+				<br>
+
+				Call Center Agent should add a memorandum to the account -
+
+				<br><br>
+
+
+				<strong>Shareholder did not have cell phone and was provided with a soft warning.</strong>
+
+				<br><br>
+
+
+
+		</div>
+
+
+		<button type="button" class="collapsible">
+			Shareholder Answers Yes
+		</button>
+
+		<div class="content">
+			<br>
+			<div class="script">
+				“Great, This will only take a moment”
+				<br><br>
+				“I’m going to send you a text message with a six digit authentication
+				code to the cell phone we have on file”
+				<br><br>
+				"Please let me know once you have authentication code.”
+				<br><br>
+				“Can you please provide me with the six digit code that you received?”
+				”Thank you, I have XXXXXX, is that correct?”
+				”Thank you, your authentication code has been confirmed.”
+			</div>
+			<br>
+			The CSR will add a memorandum to the account in CRM, and will copy and
+			paste the authentication code from the MFA tool.
+			<br><br>
+			<strong>Authentication Code XXXXXX has been confirmed</strong>
+			<br><br>
+			Continue with the redemption request.
+			<br><br>
+			NOTE – CSR will resend authentication code up to 2 times
+			<br><br>
+			<div class="script">
+				”Unfortunately, I could not confirm your authentication code. I would
+				like to send you another authentication code.”
+			</div>
+			<br>
+
+			If a valid authentication code is not provided after 2 attempts the
+			financial transaction will not be processed.
+			<br><br>
+			The CSR will report this information to their manager by emailing the
+			Primerica Box. The Call Center manager will forward the details to the
+			Client Service Officer for further review with the management company.
+			<br><br>
+		</div>
+
+		<h3>Adding Memorandum</h3>
+
+		<ol>
+			<li>Master Menu > Maintain > Add Memorandum</li>
+		</ol>
+
+		<h3>Verifying Date of Last Address Change or Last Bank Change</h3>
+
+		<ol>
+			<li>Cue Card > Last Addr. Change</li>
+			<li>Master Menu > Activity > Maintenance History</li>
+		</ol>
+
+		<h3>Verifying the Date of Last Bank Change</h3>
+
+		<ol>
+			<li>Master Menu > Addresses > Pay Access instructions > Start Date or Last Change Date</li>
+		</ol>
+
+	</div>
+
+	<script>
+		var coll = document.getElementsByClassName("collapsible");
+		var i;
+
+		for (i = 0; i < coll.length; i++) {
+			coll[i].addEventListener("click", function() {
+				this.classList.toggle("active");
+				var content = this.nextElementSibling;
+				if (content.style.maxHeight){
+					content.style.maxHeight = null;
+				} else {
+					content.style.maxHeight = content.scrollHeight + "px";
+				}
+			});
+		}
+	</script>
+
+
+</body>
+
+</html>

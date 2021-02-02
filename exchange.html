@@ -12,16 +12,24 @@
 <body>
 
   <!-- Side navigation -->
-	<div class="sidenav">
-	  <a href="index.html">Home</a>
+  <div class="sidenav">
+    <a href="index.html">Home</a>
     <br>
-	  <a href="redemption.html">Redemption</a>
-    <a href="redemption_vol.html">Redemption - Voluntary</a>
-		<a href="purchase.html">Purchase</a>
-		<a href="exchange.html">Exchange</a>
-		<a href="address.html">Address Change</a>
+    <a href="redemption.html">Redemption</a>
+    <a href="purchase.html">Purchase</a>
+    <a href="exchange.html">Exchange</a>
+    <a href="address.html">Address Change</a>
     <br>
-		<a href="lookup.html">Fund Lookup</a>
+    <a href="formReq.html">Form Request</a>
+    <a href="updatingpac.html">Updating PAC</a>
+    <br>
+    <a href="eformcopy.html">E-Form Copy</a>
+    <a href="letargeform.html">LET/ARG/E-Forms</a>
+		<a href="routingmatrix.html">Routing Matrix</a>
+    <br>
+    <a href="numbers.html">Phone Numbers</a>
+    <a href="auxcodes.html">Aux Codes</a>
+    <br>
 	</div>
 
   <div class="main">
@@ -32,9 +40,9 @@
 
     <strong>1) Confirm the trade details - </strong>
     <ul>
-      <li>The amount - if the amount, per fund, is over $25,000 create a Trade Log E-Form in image</li>
-      <li>The TO fund name, class & ticker symbol</li>
-      <li>The FROM fund name, class & ticker symbol</li>
+      <li>The amount - if the amount, per fund, is over <strong>$25,000</strong> create a Trade Log E-Form in image</li>
+      <li>The <strong>TO</strong> fund name, class & ticker symbol</li>
+      <li>The <strong>FROM</strong> fund name, class & ticker symbol</li>
       <li>The account number/numbers involved - You can exchange within an account and from
       a fund in a Voluntary account into a fund in an IRA account (Transfer to IRA in CRM)</li>
     </ul>
@@ -44,12 +52,43 @@
 
     <br><br>
 
-    <strong>3) If a PAC is active on the FROM fund, provide the PAC details and ask if the caller
-    would like it to continue.</strong>
+    <div type="button" class="collapsible">
+      <strong>3) If a PAC is active on the FROM fund, provide the PAC details and ask if the caller
+      would like it to continue.</strong>
+    </div>
+
+    <div class="content">
+      <br>
+
+      <ul>
+
+
+        <li>If No: <strong>Master Menu > Inquiry > PAC > Permanent Stop</strong>  remember to click the box under Stop, then Submit</li>
+        <br>
+        <li>If Yes: nothing needs to be done</li>
+        <br>
+        <li>If Yes, but on the <strong>TO</strong> fund:</li>
+
+        <blockquote>
+
+          <li>Stop the PAC on the from Fund <strong>Master Menu > Inquiry > PAC > Permanent Stop</strong></li>
+          <li>Click on Add PAC for the new fund on PAC Detail Screen. <strong>Master Menu Inquiry > PAC > Add PAC </strong> or <strong>Master Menu > Maintain > Add PAC</strong></li>
+
+          <blockquote>
+            <li>Enter the PAC details</li>
+          </blockquote>
+        </blockquote>
+
+      </ul>
+
+      <br>
+  </div>
+
+
     <br><br>
 
-    <strong>4) Process the exchange in CRM</strong> - again, if the amount, per fund, is over $25,000
-    create a Trade Log E-Form in Web image
+    <strong>4) Process the exchange in CRM</strong> - again, if the amount, per fund, is over <strong>$25,000</strong>
+    create a Trade Log E-Form in Web image.
 
     <h2>BEFORE SUBMITTING THE EXCHANGE:</h2>
     <div class="script">
@@ -62,8 +101,10 @@
       WITHIN 7 TO 10 BUSINESS DAYS.
 
       <br><br>
+      <iframe src="lookup2.html" width=100% height="500px"></iframe>
+      <br><br>
 
-      VOLUNTARY ACCOUNT ONLY: IF IT APPLIES, A TAX FORM WILL BE GENERATED AND MAILED TO
+      <u>VOLUNTARY ACCOUNT ONLY</u>: IF IT APPLIES, A TAX FORM WILL BE GENERATED AND MAILED TO
       YOU THE EARLY PART OF NEXT YEAR.
 
       <br><br>
@@ -75,9 +116,29 @@
       WOULD YOU LIKE THE CONFIRMATION NUMBER FOR THE EXCHANGE?
       THE CONFIRMATION NUMBER IS _______"
 
+      <br><br>
+
+
     </div>
 
   </div>
+
+  <script>
+    var coll = document.getElementsByClassName("collapsible");
+    var i;
+
+    for (i = 0; i < coll.length; i++) {
+      coll[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var content = this.nextElementSibling;
+        if (content.style.maxHeight){
+          content.style.maxHeight = null;
+        } else {
+          content.style.maxHeight = content.scrollHeight + "px";
+        }
+      });
+    }
+  </script>
 
 </body>
 

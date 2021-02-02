@@ -17,40 +17,113 @@
     <a href="index.html">Home</a>
     <br>
     <a href="redemption.html">Redemption</a>
-    <a href="redemption_vol.html">Redemption - Voluntary</a>
     <a href="purchase.html">Purchase</a>
     <a href="exchange.html">Exchange</a>
     <a href="address.html">Address Change</a>
     <br>
-		<a href="lookup.html">Fund Lookup</a>
-  </div>
+    <a href="formReq.html">Form Request</a>
+    <a href="updatingpac.html">Updating PAC</a>
+    <br>
+    <a href="eformcopy.html">E-Form Copy</a>
+    <a href="letargeform.html">LET/ARG/E-Forms</a>
+		<a href="routingmatrix.html">Routing Matrix</a>
+    <br>
+    <a href="numbers.html">Phone Numbers</a>
+    <a href="auxcodes.html">Aux Codes</a>
+    <br>
+	</div>
 
   <div class="main">
 
     <h1>Redemption</h1>
 
-    <p id="cutOffDateLimit"></p>
 
     <script type="text/javascript">
 
       function cutOffDate() {
-          var today = new Date();
-          //var birthDate = new Date(DOB);
-          var year = today.getFullYear() - 59;
-          var month = today.getMonth() - 6;
-          if (month < 0 || month === 0) {
-            age--;
-              if(month < 0) {
-                  month = 12 - month;
-              }
-          }
 
-          return "The shareholder is older than 59 1/2 if the DOB is before <mark><strong>" + month + "/" + year + "</strong></mark>";
+        var today = new Date();
+        var year = today.getFullYear() - 59;
+        var month = today.getMonth() - 5;
+        if (month < 0) {
+          month = 12 + month;
+          year = year - 1;
+        }
+
+        var fiftyNine = "The shareholder is <strong>OLDER THAN 59 1/2</strong> if the DOB is before <mark><strong>"
+        + month  + "/" + today.getDate() + "/" + year + "</strong></mark><br>";
+
+        document.write(fiftyNine);
+
       }
 
-      document.getElementById("cutOffDateLimit").innerHTML = cutOffDate();
+      cutOffDate();
+
+      function thirtyDay() {
+
+        let today = new Date();
+        let thirtyDay = new Date(today.setDate(today.getDate() - 30));
+
+        let thirtyMonth = thirtyDay.getMonth() + 1;
+        let thirtyDayDay = thirtyDay.getDate();
+        let thirtyYear = thirtyDay.getFullYear();
+
+
+        var thirty = "A <strong>30 DAY HOLD</strong> ends today if the change date happened on <mark><strong>"
+         + thirtyMonth + "/" + thirtyDayDay + "/" + thirtyYear + "</strong></mark><br><br>";
+
+        document.write(thirty);
+      }
+
+      thirtyDay();
+
+      function majority() {
+
+        let today = new Date();
+        //let thirtyDay = new Date(today.setDate(today.getDate() - 30));
+
+        let month = today.getMonth() + 1;
+        let day = today.getDate();
+        var etyear = today.getFullYear() - 18;
+        var ntyear = today.getFullYear() - 19;
+        var toyear = today.getFullYear() - 21;
+
+        var birthday = "The minor is <strong>OVER 18</strong> if they were born before <mark><strong>"
+         + month + "/" + day + "/" + etyear + "</strong></mark><br>"
+         + "The minor is <strong>OVER 19</strong> if they were born before <mark><strong>"
+         + month + "/" + day + "/" + ntyear + "</strong></mark><br>"
+         + "The minor is <strong>OVER 21</strong> if they were born before <mark><strong>"
+         + month + "/" + day + "/" + toyear + "</strong></mark><br><br>";
+
+        document.write(birthday);
+      }
+
+      majority();
 
     </script>
+
+
+
+    <strong>Confirm the redemption amount and from which fund(s)</strong> -
+    State the available balance for the fund(s) if not previously given.
+    <strong>Master Menu > Balance</strong>
+
+    <br><br>
+
+    <button type="button" class="collapsible">
+      IF FULL REDEMPTION
+    </button>
+    <div class="content">
+      <ul>
+        <li>If a PAC is ACTIVE on a full redemption of all funds, provide the PAC details and ask if it is to be stopped.</li>
+        <blockquote>
+          <li>If Yes: <strong>Inquiry > PAC > Permanent Stop</strong>  remember to click the box under Stop, then Submit</li>
+          <li>If No: You cannot use <strong>Quick Redemption</strong> or <strong>Redemption by All Shares</strong> - please see "How to Redeem only Available Shares" on PSS Hub.</li>
+        </blockquote>
+        <li>If SWP is active, provide details and ask if it is to be stopped. Make any changes through a SWP eForm</li>
+      </ul>
+
+    </div>
 
     <!--7-->
 
@@ -97,9 +170,13 @@
 
       <br>
 
+      <strong>Federal & State Withholding (DO NOT ASK FOR ROTH IRAs)</strong>
+
+      <br><br>
+
     </div>
 
-    <br>
+
 
     <!--8-->
 
@@ -136,7 +213,7 @@
 
       <br>
 
-      If the state is a <strong>mandatory withholding state</strong> and the caller
+      If the state is a <strong>mandatory withholding state</strong> AND the caller
       requests federal withholding:
 
       <br>
@@ -170,42 +247,17 @@
     </div>
     <br>
 
-    <mark><strong>If the redemption is $30,000 or more, address or bank account has changed in
-    the last 3 months perform MFA.</strong></mark>
-
-    <br><br>
-
     Ask how much the shareholder wants to withdraw.
 
     <br><br>
 
-    <!--5-->
+    <mark><strong><a href="mfa.html">If the redemption is $30,000 or more, address or bank account has changed in
+      the last 3 months perform MFA</a></strong></mark>
 
-
-    <strong>Check the CDSC Calculator – Ledger Menu > Execute > Telephone Redemptions >
-      CDSC Calculator </strong>
-    <br>
-    <strong>If a CDSC for Class C:</strong>
-    <br>
-
-    <div class="script">
-       “AS OF THE PREVIOUS DAYS’S MARKET CLOSE,
-      AND NOT INCLUDING ANY PENDING TRANSACTIONS ON YOUR PART OR OURS, TO REDEEM A NET
-      AMOUNT OF $xxx.xx FROM FUND xxxx, THERE WILL BE AN ESTIMATED CONTINGENT DEFERRED
-      SALES CHARGE OF $xx.xx.”
-    </div>
-
-    <strong>If no CDSC for Class C or Class A:</strong>
-    <br>
-    <div class="script">
-      “ASSUMING THERE ARE NO PENDING TRANSACTIONS ON YOUR SIDE OR OURS, AS OF
-      THE PREVIOUS BUSINESS DAYS’ MARKET CLOSE, THERE WILL BE NO CONTINGENT
-      DEFERRED SALES CHARGE FOR THE AMOUNT REQUESTED.”
-    </div>
-
-    <br>
 
     <!--3-->
+
+    <h2>DELIVERY METHOD</h2>
 
     <strong>Check if banking is on record</strong> if no bank then just offer checking options
     <br>
@@ -252,9 +304,6 @@
     <div class="script">
       “WOULD YOU LIKE THE ___FEE___ TO BE DEDUCTED FROM THE AMOUNT REQUESTED (GROSS)
       OR FROM THE REMAINING BALANCE OF THE FUND?” (NET)
-      <br>
-      If the redemption is $30,000 or more, address or bank account has changed in
-      the last 3 months perform MFA.
     </div>
     <br>
 
@@ -262,8 +311,37 @@
 
     <strong>Process the Trade in CRM and Review the Trade Details - <mark>If the redemption
       amount, per fund, is over $25,000 or a Federal Wire redemption or in the state of CT
-      create a Trade Log in Web Image in Web Image to be QC'd. </mark></strong>
-    <br><br>
+      create a Trade Log in Web Image in Web Image to be QC'd and email Box </mark></strong>
+
+
+      <!--5-->
+
+      <h2>CDSC FEE</h2>
+
+      <strong>Check the CDSC Calculator – Ledger Menu > Execute > Telephone Redemptions >
+        CDSC Calculator </strong>
+      <br>
+      <strong>If a CDSC for Class C:</strong>
+      <br>
+
+      <div class="script">
+         “AS OF THE PREVIOUS DAYS’S MARKET CLOSE,
+        AND NOT INCLUDING ANY PENDING TRANSACTIONS ON YOUR PART OR OURS, TO REDEEM A NET
+        AMOUNT OF $xxx.xx FROM FUND xxxx, THERE WILL BE AN ESTIMATED CONTINGENT DEFERRED
+        SALES CHARGE OF $xx.xx.”
+      </div>
+
+      <strong>If no CDSC for Class C or Class A:</strong>
+      <br>
+      <div class="script">
+        “ASSUMING THERE ARE NO PENDING TRANSACTIONS ON YOUR SIDE OR OURS, AS OF
+        THE PREVIOUS BUSINESS DAYS’ MARKET CLOSE, THERE WILL BE NO CONTINGENT
+        DEFERRED SALES CHARGE FOR THE AMOUNT REQUESTED.”
+      </div>
+
+
+
+    <h2>TRADE CONFIRMATION</h2>
 
     <div class="script">
       “YOU HAVE REQUESTED A REDEMPTION IN THE AMOUNT OF ___ (dollars/shares) FROM
@@ -271,37 +349,127 @@
       ENDING IN (last 4) XXXX“
     </div>
 
+    <br>
 
+    <table>
+      <tr>
+        <th>#</th>
+        <th>Done</th>
+        <th>Symbol</th>
+        <th>Amount</th>
+      </tr>
+      <tr>
+        <td><strong>1</strong></td>
+        <td><input type="checkbox"></td>
+        <td><input type="text"></td>
+        <td><input type="text"></td>
+      </tr>
+      <tr>
+        <td><strong>2</strong></td>
+        <td><input type="checkbox"></td>
+        <td><input type="text"></td>
+        <td><input type="text"></td>
+      </tr>
+      <tr>
+        <td><strong>3</strong></td>
+        <td><input type="checkbox"></td>
+        <td><input type="text"></td>
+        <td><input type="text"></td>
+      </tr>
+      <tr>
+        <td><strong>4</strong></td>
+        <td><input type="checkbox"></td>
+        <td><input type="text"></td>
+        <td><input type="text"></td>
+      </tr>
+      <tr>
+        <td><strong>5</strong></td>
+        <td><input type="checkbox"></td>
+        <td><input type="text"></td>
+        <td><input type="text"></td>
+      </tr>
+      <tr>
+        <td><strong>6</strong></td>
+        <td><input type="checkbox"></td>
+        <td><input type="text"></td>
+        <td><input type="text"></td>
+      </tr>
+      <tr>
+        <td><strong>7</strong></td>
+        <td><input type="checkbox"></td>
+        <td><input type="text"></td>
+        <td><input type="text"></td>
+      </tr>
+      <tr>
+        <td><strong>8</strong></td>
+        <td><input type="checkbox"></td>
+        <td><input type="text"></td>
+        <td><input type="text"></td>
+      </tr>
+      <tr>
+        <td><strong>9</strong></td>
+        <td><input type="checkbox"></td>
+        <td><input type="text"></td>
+        <td><input type="text"></td>
+      </tr>
+    </table>
+
+
+
+    <br>
+
+    <iframe src="lookup2.html" width=100% height="500px"></iframe>
+
+
+
+
+
+    <h3>TIME</h3>
 
     <script type="text/javascript">
 
       function currentTime() {
-          //var date = new Date().toLocaleTimeString();
-          //var hours = date.getHours();
-          //var min = date.getMinutes();
 
-          //return "It is currently <strong>" + date + "</strong>";
-          return "hi"
+        var currentdate = new Date();
+        var datetime = "<strong>" + (currentdate.getMonth()+1)  + "/"
+          + currentdate.getDate() + "/"
+          + currentdate.getFullYear() + " "
+          + currentdate.getHours() + ":"
+          + currentdate.getMinutes() + ":"
+          + currentdate.getSeconds() + "</strong>";
+
+          document.write(datetime);
+
+//        //var today = new Date();
+//        var dd = String(today.getDate()).padStart(2, '0');
+//        var mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
+//        var yyyy = today.getFullYear();
+
+//        today = mm + '/' + dd + '/' + yyyy;
+//        document.write(today);
       }
 
       document.getElementById("time").innerHTML = currentTime();
 
     </script>
 
-    <p id="time"></p>
+    <br><br>
 
     <strong>IF BEFORE 4 PM EASTERN TIME:</strong>
     <br>
     <div class="script">
       “THIS REDEMPTION WILL BE PROCESSED AS OF THE MARKET CLOSE TODAY___ (date in CRM)”
     </div>
+
+
     <strong>IF AFTER 4 PM EASTERN TIME:</strong>
     <br>
     <div class="script">
       “THIS REDEMPTION WILL BE PROCESSED AS OF THE MARKET CLOSE THE NEXT BUSINESS
       DAY___ (date in CRM).”
     </div>
-    <br>
+
+    <h3>DELIVER BY MAIL</h3>
 
     <strong>CHECK SENT BY FIRST CLASS MAIL:</strong>
     <br>
@@ -318,7 +486,7 @@
       SENT OUT ARRIVING WITHIN 7 TO 10 BUSINESS DAYS.”
     </div>
 
-    <br>
+    <h3>DELIVER TO BANK</h3>
 
     <strong>MONIES SENT TO THE BANK ACCOUNT BY ACH:</strong>
     <br>
@@ -338,18 +506,48 @@
     </div>
 
     <br>
-    <div class="script">
-      “YOU MAY BE ABLE TO DO A TAX FREE ROLLOVER INTO THIS OR ANOTHER IRA ACCOUNT
-      WITHIN 60 DAYS OF RECEIPT OF YOUR REDEMPTION IF YOU ARE ELIGIBLE. IF IT
-      APPLIES, A TAX FORM WILL BE GENERATED & MAILED TO YOU THE EARLY PART OF NEXT YEAR.
-      CAN YOU VERIFY YOUR PHONE NUMBER FOR ME? DO I HAVE PERMISSION TO SUBMIT YOUR REQUEST?
+
+
+
+    <h2>CLOSING</h2>
+
+    <button type="button" class="collapsible">
+      ROTH IRA, IRA (Traditional, SEP, SIMPLE, Rollover)
+    </button>
+    <div class="content">
+      <br>
+      <div class="script">
+        “YOU MAY BE ABLE TO DO A TAX FREE ROLLOVER INTO THIS OR ANOTHER IRA ACCOUNT
+        WITHIN 60 DAYS OF RECEIPT OF YOUR REDEMPTION IF YOU ARE ELIGIBLE."
+      </div>
+      <br>
     </div>
 
+    <button type="button" class="collapsible">
+      VOLUNTARY ACCOUNT (JTWROS, TOD, INDIVIDUAL, UGMA/UTMA, TRUST)
+    </button>
+    <div class="content">
+      <br>
+      <div class="script">
+        “INCLUDED WILL BE A REINVESTMENT FORM WHICH WILL ALLOW YOU TO REINVEST
+        WITH NO ADDED SALES CHARGE IF YOU ARE ELIGIBLE.""
+      </div>
+      <br>
+    </div>
     <br>
 
     <!--11-->
     <div class="script">
-    “WOULD YOU LIKE THE CONFIRMATION NUMBER FOR THE TRADE? THE CONFIRMATION NUMBER IS ___.”
+
+    "IF IT APPLIES, A TAX FORM WILL BE GENERATED & MAILED TO YOU THE EARLY PART OF NEXT YEAR.
+      CAN YOU VERIFY YOUR PHONE NUMBER FOR ME?""
+
+    <br><br>
+    "DO I HAVE PERMISSION TO SUBMIT YOUR REQUEST?
+
+    <br>
+
+    WOULD YOU LIKE THE CONFIRMATION NUMBER FOR THE TRADE? THE CONFIRMATION NUMBER IS ___.”
 
   </div>
 
